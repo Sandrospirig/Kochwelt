@@ -137,6 +137,8 @@ button {
 
 .homepage_section2 img {
     width: 240px;
+    height: 164px;
+    object-fit: cover;
     border-radius: 4px;
 }
 
