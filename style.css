@@ -103,7 +103,7 @@ a:hover{
     justify-content: flex-end;
 }
 
-.homepage_section1 button {
+button {
     width: 160px;
     height: 40px;
     background-color: #018000;
@@ -302,6 +302,10 @@ footer {
 .icon img{
     width: 12px;
     height: 12px;
+}
+
+tr:nth-child(odd) {
+  background-color: #EFEFEF;
 }
 
 
