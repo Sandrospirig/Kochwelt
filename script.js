@@ -40,3 +40,19 @@ function updateZutatenAnzeigen(zutaten) {
     document.getElementById('ingredient5').textContent = zutaten.Rahm + ' dl Rahm';
     document.getElementById('ingredient6').textContent = zutaten.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
 }
+
+let portionsInput = document.getElementById('portions');
+let portionsError= document.getElementById('portions-error');
+
+portionsInput.addEventListener('invalid', function(event){
+    event.preventDefault();
+    portionsError.style.display = "block"
+});
+
+portionsInput.addEventListener('input', function() {
+    if (this.validity.valid) {
+        portionsError.style.display = "none";
+    } else {
+        portionsError.style.display ="block"
+    }
+});

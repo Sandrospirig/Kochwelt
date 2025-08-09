@@ -33,32 +33,36 @@
         </nav>
     </header>
     <main>
-
-    </main>
-    <h1>Bayerische Leberkas Pfanne</h1>
-    <img class="img_own_recipe" src="/img/lerberkaspfanne.png" alt="Gericht Leberkas Pfanne">
-
-    <section class="display_flex">
-        <div class="recipe_descrition_details">
+    
+    <section class="recipeoftheday">
+        <div class=".daily-recipe">
+    <h1>Jens' Goulasch</h1>
+    <img  src="/img/goulash.jpg" alt="Gericht Leberkas Pfanne">
+    <div class="prep-info">    
+        <div class="icon">
             <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Kochzeit">
-            <p>25 min.</p>
+            <p>25Min.</p>
         </div>
-        <div class="recipe_descrition_details">
+        <div class="icon">
             <img class="img_recipe_description" src="/img/icons/brain-solid.svg" alt="Schwierigkeit">
             <p>normal</p>
         </div>
-        <div class="recipe_descrition_details">
+        <div class="icon">
             <img class="img_recipe_description" src="/img/icons/calendar-alt-regular.svg" alt="Erstellungsdatum">
             <p>06.08.2025</p>
+            </div>
+        </div>
+        </div>
     </section>
 
     <section class="display_flex">
         <p>Zutaten für:</p>
-        <input type="number" value="2" min="1" max="20">
-        <button>Portionen</button>
+        <input type="number" id="porstions" value="2" min="1" max="20">
+        <span id="portions-error">Bitte geben sie eine Zahl zwischen 1 und 20 ein!!!</span>
+        <button type="submit">Portionen</button>
     </section>
 
-    <article>
+    <article class="display_flex">
         <table>
             <tr>
                 <td>400g</td>
@@ -136,6 +140,7 @@
             <p>Matthias Wittl</p>
         </div>
     </section>
+    </main>
     <!-- to
      Download per PDF
      Mock up ergänzen

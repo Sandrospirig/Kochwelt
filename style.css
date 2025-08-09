@@ -78,7 +78,6 @@ a:hover{
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    /* text-align: left; */
 
 }
 
@@ -228,7 +227,22 @@ footer {
 }
 
 .display_flex {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+
+}
+
+.display_flex input {
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    margin-right: 10px;
+    border-width: 0.5px;
+    border-radius: 4px;
 
 }
 
@@ -244,6 +258,11 @@ footer {
 .Personal_Profil_Recipe {
     display: flex;
     align-items: center;
+}
+
+#portions-error {
+    color: red;
+    display: none;
 }
 
 .recipeoftheday {
@@ -266,6 +285,14 @@ footer {
     font-weight: 600;
 }
 
+.recipeoftheday img {
+    width: 1392px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    /* margin: 24px; */
+}
+
 .meal_pic {
     max-width: 1440px;
     display: flex;
@@ -285,25 +312,28 @@ footer {
     padding-right: 10px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    flex-direction: column;
 }
 
 .icon {
     background-color: #EFEFEF;
-    width: 56px;
+    width: 80px;
     height: 14px;
     color: black;
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 12px;
     margin-top: 16px;
+    margin-right: 24px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     padding: 8px;    
 }
 .icon img{
-    width: 12px;
+    width: 20px;
     height: 12px;
+    padding-right: 8px;
 }
 
 tr:nth-child(odd) {
