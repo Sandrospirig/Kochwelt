@@ -33,14 +33,22 @@
   </header>
   <main>
         <h1>Spaghetti Carbonara mit Rahm</h1>
-        <img src="./img/spaghetti-carbonara-2560x1920.png" alt="spaghetti-carbonara">
+        <img class="img_own_recipe" src="./img/spaghetti-carbonara-2560x1920.png" alt="spaghetti-carbonara">
 
-    <section class="section1_rezept">
-
-        <div class="icons">
-
+    <section class="display_flex">
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Kochzeit">
+            <p>25 min.</p>
         </div>
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/brain-solid.svg" alt="Schwierigkeit">
+            <p>normal</p>
+        </div>
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/calendar-alt-regular.svg" alt="Erstellungsdatum">
+            <p>06.08.2025</p>
     </section>
+
     <section>
          <div class="ingredients-container">
 
@@ -48,7 +56,7 @@
 
                         <form>
                             <span>Zutaten für</span>
-                            <input min="1" max="7" value="1" type="number" id="portionen"
+                            <input min="1" max="15" value="1" type="number" id="portionen"
                                 placeholder="Anzahl an Portionen" required>
                             <button id="calculateButton" type="submit">Portionen</button>
                         </form>
@@ -56,15 +64,58 @@
                     </div>
 
                     <ul class="ingredients-table">
-                        <li class="ingredients-list" id="ingredient1">100 - 125 g Spaghetti</li>
+                        <li class="ingredients-list" id="ingredient1">125 g Spaghetti</li>
                         <li class="ingredients ingredients-list" id="ingredient2">25 g	Speck- oder Schinkenwürfeli</li>
                         <li class="ingredients-list" id="ingredient3">¼ - ½ Knoblauchzehen</li>
                         <li class="ingredients ingredients-list" id="ingredient4">¾	Eier</li>
                         <li class="ingredients-list" id="ingredient5">0,25 dl	Rahm</li>
                         <li class="ingredients ingredients-list" id="ingredient6">18,75 g	Sbrinz AOP oder Parmino*, gerieben</li>
                     </ul>
-
                 </div>
+                    <section>
+        <h2>Zubereitung</h2>
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Arbeitszeit ca. 25 Minuten">
+            <p>Arbeitszeit ca. 25 Minuten</p>
+        </div>
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Koch-/Backzeit ca. 30 Minuten">
+            <p>Koch-/Backzeit ca. 30 Minuten</p>
+        </div>
+        <div class="recipe_descrition_details">
+            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Gesamtzeit 55 Minuten">
+            <p>Gesamtzeit 55 Minuten</p>
+        </div>
+        <p>Den Leberkäse in kleine Stücke schneiden. Den Speck klein würfeln. Die Zwiebel schälen und in Ringe schneiden.
+        </p><br>
+        <p>2 EL Öl in einer Pfanne erhitzen. Den Leberkäse, Speck und die Zwiebel kräftig in der Pfanne anbraten. Die Leberkäsemischung aus der Pfanne nehmen.</p><br>
+        <p>Die noch rohen Kartoffeln schälen und in kleine Stücke schneiden. 1 EL Öl in der Pfanne nochmals erhitzen. Die Kartoffelstücke in die Pfanne geben und unter gelegentlichen Wenden ca. 20 Min. braten.</p><br>
+        <p>In der Zwischenzeit Lauch und die Paprikaschoten putzen und in kleine Stücke schneiden. Zu den Kartoffeln geben. Den Leberkäse nach 10 Min. zugeben und untermischen. Mit Salz, Pfeffer und Paprikapulver würzen. Nochmals kurz anbraten und zum Schluss die Crème fraîche dazugeben. Mit gehackter Petersilie bestreuen und sofort servieren.</p>
+    </section>
+    
+    <section>
+        <p>Rezept von</p>
+        <div class="Personal_Profil_Recipe">
+            <img class="Profil_personal_img" src="/img/profile.png" alt="Profilbild Sandro Spirig">
+            <p>Sandro Spirig</p>
+        </div>
+    </section>
+    <!-- to
+     Download per PDF
+     Mock up ergänzen
+     stylen
+     Java Script-->
+
+
+
+
+
+
+    <footer>
+
+        <a class="navigation_logo" href="index.html">
+            <img class="navigation_logo_img" src="./img/logo.png" alt="Kochweltlogo"></a>
+    </footer>
     </section>
   </main>
 <script src="script.js"></script>
