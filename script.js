@@ -4,7 +4,7 @@ document.getElementById('calculateButton').addEventListener('click', function (e
 
     let portionen = parseInt(document.getElementById('portionen').value);
 
-    if (isNaN(portionen) || portionen < 1 || portionen > 7) {
+    if (isNaN(portionen) || portionen < 1 || portionen > 20) {
         alert("Bitte eine Zahl von 1 bis 7 eingeben")
         return //{alert();} 
     } 
@@ -19,9 +19,9 @@ function berechneZutaten(portionen) {
         Spaghetti: 125 * portionen,
         SpeckoderSchinkenwürfeli: 12 * portionen,
         Knoblauchzehen: 0.5 * portionen,
-        Eier: 3 / 4 * portionen,
+        Eier: 1 * portionen,
         Rahm: 0.25 * portionen,
-        SbrinzAOPoderParminogeriebeng: 18.7 * portionen
+        SbrinzAOPoderParminogeriebeng: 18 * portionen
     };
 }
 
