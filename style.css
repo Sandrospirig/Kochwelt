@@ -391,6 +391,15 @@ tr:nth-child(odd) {
     padding-right: 8px;
 }
 
+.preparation {
+    width: 1440px;
+    max-width: 1440px;
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
 
 
 
