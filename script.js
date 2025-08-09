@@ -41,7 +41,7 @@ function updateZutatenAnzeigenSandro(zutatenSandro) {
     document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Knoblauchzehen + ' Knochblauchzehen';
     document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Eier + ' Eier';
     document.getElementById('ingredient5Sandro').textContent = zutatenSandro.Rahm + ' dl Rahm';
-    document.getElementById('ingredient6Sandro').textContent = zutatenSandro.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
+    document.getElementById('ingredient6Sandro').textContent = zutatenSandro.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parmino gerieben';
 }
 
 // Jens Gulasch
