@@ -41,7 +41,7 @@ function updateZutatenAnzeigen(zutaten) {
     document.getElementById('ingredient3').textContent = zutaten.Knoblauchzehen + ' Knochblauchzehen';
     document.getElementById('ingredient4').textContent = zutaten.Eier + ' Eier';
     document.getElementById('ingredient5').textContent = zutaten.Rahm + ' dl Rahm';
-    document.getElementById('ingredient6').textContent = zutaten.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
+    document.getElementById('ingredient6').textContent = zutaten.SbrinzAOPoderParminogeriebeng+ ' g SbrinzAOP oder Parminogeriebeng';
 }
 
 // Jens Gulasch
