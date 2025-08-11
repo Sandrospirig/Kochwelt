@@ -373,6 +373,7 @@ tr:nth-child(odd) {
     
 }
 .contact_form_input{
+   width: auto;
    border-color: #dcdcdc;
    border-radius: 6px;
    height: 20px;
