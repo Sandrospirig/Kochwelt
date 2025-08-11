@@ -215,6 +215,8 @@ footer {
     min-width: 1440px;
     display: flex;
     align-items: flex-start;
+    position: absolute;
+    bottom: 0;
 }
 
 .navigation_logo {
