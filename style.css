@@ -62,8 +62,7 @@ a:hover{
     max-width: 720px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    flex: 1;
+    justify-content: center;    
 }
 
 .navigationbar {
