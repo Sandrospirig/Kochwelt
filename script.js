@@ -119,30 +119,32 @@ document.getElementById('calculateButtonMatthias').addEventListener('click', fun
 
 function berechneZutatenMatthias(portionenMatthias) {
     return {
-        Spaghetti: 125 * portionenMatthias,
-        SpeckoderSchinkenwürfeli: 12 * portionenMatthias,
-        Knoblauchzehen: 0.5 * portionenMatthias,
-        Eier: 1 * portionenMatthias,
-        Rahm: 0.25 * portionenMatthias,
-        SbrinzAOPoderParminogeriebeng: 18 * portionenMatthias
+        Leberkäse: 125 * portionenMatthias,
+        Speck: 10 * portionenMatthias,
+        Öl: 0.75 * portionenMatthias,
+        Kartoffel: 100 * portionenMatthias,
+        Lauch: 62.5 * portionenMatthias,
+        Paprikaschote: 0.5 * portionenMatthias
+        Cremefraiche: 25 * portionenMatthias,
     };
 }
 
 function updateZutatenAnzeigenMatthias(zutatenMatthias) {
 
-    let SpaghettiText;
-    if (zutatenMatthias.Spaghetti >= 1000) {
-        SpaghettiText = (zutatenMatthias.Spaghetti / 1000) + ' Kg Spaghetti';
+    let LeberkäseText;
+    if (zutatenMatthias.Leberkäse >= 1000) {
+        LeberkäseText = (zutatenMatthias.Leberkäse / 1000) + ' Kg Leberkäse';
     } else {
-        SpaghettiText = zutatenMatthias.Spaghetti + ' g Spaghetti';
+        LeberkäseText = zutatenMatthias.Leberkäse + ' g Leberkäse';
     }
 
-    document.getElementById('ingredient1Matthias').textContent = SpaghettiText;
-    document.getElementById('ingredient2Matthias').textContent = zutatenMatthias.SpeckoderSchinkenwürfeli + ' g Speck oder Schinkenwürfeli';
-    document.getElementById('ingredient3Matthias').textContent = zutatenMatthias.Knoblauchzehen + ' Knochblauchzehen';
-    document.getElementById('ingredient4Matthias').textContent = zutatenMatthias.Eier + ' Eier';
-    document.getElementById('ingredient5Matthias').textContent = zutatenMatthias.Rahm + ' dl Rahm';
-    document.getElementById('ingredient6Matthias').textContent = zutatenMatthias.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
+    document.getElementById('ingredient1Matthias').textContent = LeberkäseText;
+    document.getElementById('ingredient2Matthias').textContent = zutatenMatthias.Speck + ' g Speck, geräuchert';
+    document.getElementById('ingredient3Matthias').textContent = zutatenMatthias.Öl + ' EL Öl';
+    document.getElementById('ingredient4Matthias').textContent = zutatenMatthias.Kartoffel + ' Kartoffel(n)';
+    document.getElementById('ingredient5Matthias').textContent = zutatenMatthias.Lauch + ' dl Rahm';
+    document.getElementById('ingredient6Matthias').textContent = zutatenMatthias.Paprikaschote + ' Paprikaschote(n)';
+    document.getElementById('ingredient6Matthias').textContent = zutatenMatthias.Cremefraiche + ' g Creme fraiche';
 }
 
 // Dmitrii Gericht
