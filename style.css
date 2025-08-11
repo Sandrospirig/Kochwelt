@@ -204,7 +204,18 @@ footer {
     margin-left: 0;
     height: 160px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #403B3B;
+}
+
+.footer {
+    max-width: 1440px;
+    min-width: 1440px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .navigation_logo {
