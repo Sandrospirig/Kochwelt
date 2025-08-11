@@ -444,7 +444,31 @@ footer img {
     height: calc(100vh - 160px);
 }
 
-
+@media (min-width: 1920px) {
+    
+    .contact_form {
+        height: 480px;
+        width: 400px;
+        padding: 14px;
+        font-size: 13px;
+    }
+    .contact_form_headline {
+        margin-bottom: 34px;
+        font-size: 18px;
+    }
+    .contact_form_input {
+        height: 28px;
+        margin-bottom: 32px;
+    
+    }
+    .contact_form_input_message {
+        height: 200px;
+    }
+    .contact_form_input_submit {
+        width: 140px;
+        padding: 6px;
+    }
+    }
 
 
 
