@@ -400,6 +400,10 @@ tr:nth-child(odd) {
     /* justify-content: center; */
 }
 
+footer img {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
 
 
 
