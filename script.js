@@ -181,6 +181,8 @@ function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
     document.getElementById('ingredient6Dmitrii').textContent = zutatenDmitrii.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
 }
 
+// Kontaktformular
+
 function sendMail(event){
     event.preventDefault();
     const data = new FormData(event.target);
