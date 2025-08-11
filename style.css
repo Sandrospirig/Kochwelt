@@ -221,6 +221,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+.footer-left {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
 .footer-right{
     display: flex;
     align-items: center;
@@ -438,10 +441,6 @@ tr:nth-child(odd) {
     margin-right: auto;
     margin-top: 160px;
     max-width: 1440px;
-}
-
-footer img {
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 }
 
 .wrapper {
