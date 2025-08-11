@@ -39,6 +39,18 @@ function updateZutatenAnzeigenJens(zutatenJens) {
     } else {
         SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
     }
+    let BierText;
+    if (zutatenJens.Bier >= 1000) {
+        BierText = (zutatenJens.Bier / 1000) + ' L Bier';
+    } else {
+        BierText = zutatenJens.Bier + ' ml Bier';
+    }
+    let GemüsebrüheText;
+    if (zutatenJens.Gemüsebrühe >= 1000) {
+        GemüsebrüheText = (zutatenJens.Gemüsebrühe / 1000) + ' L Gemüsebrühe';
+    } else {
+        GemüsebrüheText = zutatenJens.Gemüsebrühe + ' ml Gemüsebrühe';
+    }
 
     document.getElementById('ingredient1Jens').textContent = SchweinegulaschText;
     document.getElementById('ingredient2Jens').textContent = zutatenJens.Butterschmalz + ' EL Butterschmalz';
@@ -47,8 +59,8 @@ function updateZutatenAnzeigenJens(zutatenJens) {
     document.getElementById('ingredient5Jens').textContent = zutatenJens.großeZwiebeln + ' große Zwiebel(n)';
     document.getElementById('ingredient6Jens').textContent = zutatenJens.Knoblauchzehen + ' Knoblauchzehen';
     document.getElementById('ingredient7Jens').textContent = zutatenJens.Karotte + ' Karotte(n)';
-    document.getElementById('ingredient8Jens').textContent = zutatenJens.Bier + ' ml Bier';
-    document.getElementById('ingredient9Jens').textContent = zutatenJens.Gemüsebrühe + ' ml Gemüsebrühe';
+    document.getElementById('ingredient8Jens').textContent = BierText;
+    document.getElementById('ingredient9Jens').textContent = GemüsebrüheText;
     document.getElementById('ingredient10Jens').textContent = zutatenJens.Paprikapulver + ' TL Paprikapulver';
     document.getElementById('ingredient11Jens').textContent = zutatenJens.Cremefraiche + ' ml Crème fraîche';
 }
