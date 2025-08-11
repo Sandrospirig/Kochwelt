@@ -9,7 +9,7 @@ document.getElementById('calculateButtonSandro').addEventListener('click', funct
     if (isNaN(portionenSandro) || portionenSandro < 1 || portionenSandro > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
-    } 
+    }
 
     let zutatenSandro = berechneZutatenSandro(portionenSandro);
 
@@ -18,30 +18,26 @@ document.getElementById('calculateButtonSandro').addEventListener('click', funct
 
 function berechneZutatenSandro(portionenSandro) {
     return {
-        Spaghetti: 125 * portionenSandro,
-        SpeckoderSchinkenwürfeli: 12 * portionenSandro,
-        Knoblauchzehen: 0.5 * portionenSandro,
-        Eier: 1 * portionenSandro,
-        Rahm: 0.25 * portionenSandro,
-        SbrinzAOPoderParminogeriebeng: 18 * portionenSandro
+        Pasta: 125 * portionenSandro,
+        Pancetta: 12 * portionenSandro,
+        Parmesan: 0.5 * portionenSandro,
+        Pecorino: 1 * portionenSandro,
     };
 }
 
 function updateZutatenAnzeigenSandro(zutatenSandro) {
 
-    let SpaghettiText;
-    if (zutatenSandro.Spaghetti >= 1000) {
-        SpaghettiText = (zutatenSandro.Spaghetti / 1000) + ' Kg Spaghetti';
+    let PastaText;
+    if (zutatenSandro.Pasta >= 1000) {
+        PastaText = (zutatenSandro.Pasta / 1000) + ' Kg Pasta';
     } else {
-        SpaghettiText = zutatenSandro.Spaghetti + ' g Spaghetti';
+        PastaText = zutatenSandro.Pasta + ' g Pasta';
     }
 
-    document.getElementById('ingredient1Sandro').textContent = SpaghettiText;
-    document.getElementById('ingredient2Sandro').textContent = zutatenSandro.SpeckoderSchinkenwürfeli + ' g Speck oder Schinkenwürfeli';
-    document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Knoblauchzehen + ' Knochblauchzehen';
-    document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Eier + ' Eier';
-    document.getElementById('ingredient5Sandro').textContent = zutatenSandro.Rahm + ' dl Rahm';
-    document.getElementById('ingredient6Sandro').textContent = zutatenSandro.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parmino gerieben';
+    document.getElementById('ingredient1Sandro').textContent = PastaText;
+    document.getElementById('ingredient2Sandro').textContent = zutatenSandro.Pancetta + ' g Pancetta';
+    document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Parmesan + ' g Parmesan';
+    document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Pecorino + ' g Pecorino';
 }
 
 // Jens Gulasch
@@ -54,7 +50,7 @@ document.getElementById('calculateButtonJens').addEventListener('click', functio
     if (isNaN(portionenJens) || portionenJens < 1 || portionenJens > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
-    } 
+    }
 
     let zutatenJens = berechneZutatenJens(portionenJens);
 
@@ -81,7 +77,7 @@ function updateZutatenAnzeigenJens(zutatenJens) {
 
     let SchweinegulaschText;
     if (zutatenJens.Schweinegulasch >= 1000) {
-        SchweinegulaschText = (zutatenJens.SSchweinegulasch/ 1000) + ' Kg Schweinegulasch';
+        SchweinegulaschText = (zutatenJens.SSchweinegulasch / 1000) + ' Kg Schweinegulasch';
     } else {
         SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
     }
@@ -110,7 +106,7 @@ document.getElementById('calculateButtonMatthias').addEventListener('click', fun
     if (isNaN(portionenMatthias) || portionenMatthias < 1 || portionenMatthias > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
-    } 
+    }
 
     let zutatenMatthias = berechneZutatenMatthias(portionenMatthias);
 
@@ -124,7 +120,7 @@ function berechneZutatenMatthias(portionenMatthias) {
         Öl: 0.75 * portionenMatthias,
         Kartoffel: 100 * portionenMatthias,
         Lauch: 62.5 * portionenMatthias,
-        Paprikaschote: 0.5 * portionenMatthias
+        Paprikaschote: 0.5 * portionenMatthias,
         Cremefraiche: 25 * portionenMatthias,
     };
 }
@@ -158,7 +154,7 @@ document.getElementById('calculateButtonDmitrii').addEventListener('click', func
     if (isNaN(portionenDmitrii) || portionenDmitrii < 1 || portionenDmitrii > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
-    } 
+    }
 
     let zutatenDmitrii = berechneZutatenDmitrii(portionenDmitrii);
 
@@ -203,7 +199,7 @@ function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
 
 // Kontaktformular
 
-function sendMail(event){
+function sendMail(event) {
     event.preventDefault();
     const data = new FormData(event.target);
 
@@ -219,4 +215,4 @@ function sendMail(event){
         console.log(error);
     });
 }
- // Ende
+// Ende
