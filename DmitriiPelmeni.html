@@ -33,96 +33,122 @@
         </nav>
     </header>
     <main class="recipeoftheday">
-    
-    <section class="daily-recipe">
-        <div>
-        <h1>Jens' Goulasch</h1>
-        <img  src="/img/goulash.jpg" alt="Gericht Leberkas Pfanne">
-        <div class="prep-info">    
-        <div class="icon">
-            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Kochzeit">
-            <span>25 Min.</span>
-        </div>
-        <div class="icon">
-            <img class="img_recipe_description" src="/img/icons/brain-solid.svg" alt="Schwierigkeit">
-            <span>normal</span>
-        </div>
-        <div class="icon">
-            <img class="img_recipe_description" src="/img/icons/calendar-alt-regular.svg" alt="Erstellungsdatum">
-            <span>06.08.2025</span>
-            </div>
-        </div>
-        </div>
-    </section>
 
-    <section class="ingredients-container">
-                    <div class="ingredients-portion">
-
-                        <form>
-                            <span>Zutaten für</span>
-                            <input min="1" max="7" value="1" type="number" id="portionen"
-                                placeholder="Anzahl an Portionen" required>
-                            <button id="calculateButton" type="submit">Portionen</button>
-                        </form>
-
+        <section class="daily-recipe">
+            <div>
+                <h1>Jens' Goulasch</h1>
+                <img src="/img/goulash.jpg" alt="Gericht Leberkas Pfanne">
+                <div class="prep-info">
+                    <div class="icon">
+                        <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Kochzeit">
+                        <span>25 Min.</span>
                     </div>
-
-                    <table class="ingredients-table">
-                        <tr>
-                            <td class="ingredients-list" id="ingredient1">100 - 125 g Spaghetti</td>
-                        </tr>
-                        <tr>
-                            <td class="ingredients ingredients-list" id="ingredient2">25 g Speck- oder Schinkenwürfeli</td>
-                        </tr>
-                        <tr>
-                            <td class="ingredients-list" id="ingredient3">¼ - ½ Knoblauchzehen</td>
-                        </tr>
-                        <tr>
-                            <td class="ingredients ingredients-list" id="ingredient4">¾ Eier</td>
-                        </tr>
-                        <tr>
-                            <td class="ingredients-list" id="ingredient5">0,25 dl Rahm</td>
-                        </tr>
-                        <tr>
-                            <td class="ingredients ingredients-list" id="ingredient6">18,75 g Sbrinz AOP oder Parmino*, gerieben</td>
-                        </table>
-
+                    <div class="icon">
+                        <img class="img_recipe_description" src="/img/icons/brain-solid.svg" alt="Schwierigkeit">
+                        <span>normal</span>
+                    </div>
+                    <div class="icon">
+                        <img class="img_recipe_description" src="/img/icons/calendar-alt-regular.svg"
+                            alt="Erstellungsdatum">
+                        <span>06.08.2025</span>
+                    </div>
                 </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="ingredients-container">
-        <h2>Zubereitung</h2>
-        <div class="prep-info">
-        <div class="recipe_descrition_details">
-            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Arbeitszeit ca. 25 Minuten">
-            <span>Arbeitszeit <br>ca. 25 Minuten</span>
-        </div>
-        <div class="recipe_descrition_details">
-            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Koch-/Backzeit ca. 30 Minuten">
-            <span>Koch-/Backzeit <br>ca. 30 Minuten</span>
-        </div>
-        <div class="recipe_descrition_details">
-            <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Gesamtzeit 55 Minuten">
-            <span>Gesamtzeit <br>55 Minuten</span>
-        </div>
-        </div>
-        <p>Die Zwiebeln in 0,5 cm große Würfel schneiden, Karotte und Sellerie würfeln. Alles in 2 EL Butterschmalz kräftig anbraten. Tomatenmark zugeben und andünsten bis sich eine homogene Masse bildet, das Mark darf ruhig ein bisschen ansetzen. Paprikapulver kurz mitrösten (Vorsicht, darf nicht verbrennen!). Mit dem Rotwein und der Brühe ablöschen und zum Kochen bringen. Jetzt erst das gewürfelte Fleisch dazu geben, wieder aufkochen und bei kleiner Hitze mit den Lorbeerblättern ca. 2 Stunden köcheln lassen.<br>
-            <br>
-        Durch das Gemüse ist es normalerweise nicht nötig, die Sauce zu binden. Wenn sie allerdings zu flüssig ist, kann man das Gulasch mit 1 EL in kaltem Wasser aufgelöstem Stärkemehl andicken. Dann noch abschmecken mit Salz und Pfeffer. Die Lorbeerblätter fische ich nach Möglichkeit vor dem Servieren raus.<br>
-        <br>
-        Dies ist ein Grundrezept für Gulasch, man kann es wunderbar abwandeln, indem man z. B. eine halbe Stunde vor Ende der Garzeit noch Sahne, Kartoffeln und/oder Paprikaschoten zugibt. Ich gebe auch immer noch Knoblauch dazu, den mochte aber meine Oma nicht.<br>
-        <br>
-        <br>
-        Dazu schmecken Knödel jeglicher Art, Kartoffeln oder Nudeln.</p>
-    </section>
-    
-    <section class="creator">
-        <h3>Rezept erstellt von</h3>
-        <div class="Personal_Profile_Recipe">
-            <img class="Profil_personal_img" src="/img/jb-profile.png" alt="Profilbild Matthias Wittl">
-            <p>Jens Baumeister</p>
-        </div>
-    </section>
+        <section class="ingredients-container">
+            <div class="ingredients-portion">
+
+                <form>
+                    <span>Zutaten für</span>
+                    <input min="1" max="20" value="1" type="number" id="portionenDmitrii"
+                        placeholder="Anzahl an Portionen" required>
+                    <button id="calculateButtonDmitrii" type="submit">Portionen</button>
+                </form>
+
+            </div>
+
+            <table class="ingredients-table">
+                <tr>
+                    <td class="ingredients-list" id="ingredient1Dmitrii">100 g Mehl</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient2Dmitrii">0.5 Eier</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-list" id="ingredient3Dmitrii">37.5 ml Wasser</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient4Dmitrii">0.125 TL Salz</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-list" id="ingredient5Dmitrii">100 g Hackfleisch</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient6Dmitrii">12.5 g Butter</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient7Dmitrii">0.75 EL Sahne</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient8Dmitrii">0.5 Zwiebel</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient9Dmitrii">0.5 EL Butter</td>
+                </tr>
+                <tr>
+                    <td class="ingredients ingredients-list" id="ingredient10Dmitrii">0.75 EL Essig</td>
+                </tr>
+            </table>
+
+            </div>
+        </section>
+
+        <section class="ingredients-container">
+            <h2>Zubereitung</h2>
+            <div class="prep-info">
+                <div class="recipe_descrition_details">
+                    <img class="img_recipe_description" src="/img/icons/clock-regular.svg"
+                        alt="Arbeitszeit ca. 25 Minuten">
+                    <span>Arbeitszeit <br>ca. 25 Minuten</span>
+                </div>
+                <div class="recipe_descrition_details">
+                    <img class="img_recipe_description" src="/img/icons/clock-regular.svg"
+                        alt="Koch-/Backzeit ca. 30 Minuten">
+                    <span>Koch-/Backzeit <br>ca. 30 Minuten</span>
+                </div>
+                <div class="recipe_descrition_details">
+                    <img class="img_recipe_description" src="/img/icons/clock-regular.svg" alt="Gesamtzeit 55 Minuten">
+                    <span>Gesamtzeit <br>55 Minuten</span>
+                </div>
+            </div>
+            <p>Mehl in eine Rührschüssel geben, eine Vertiefung formen und das Wasser, Ei und Salz zugeben. Das Ganze zu 
+                einem festen Teig kneten (Nudelteig), mit einem Tuch abdecken und 20 - 30 Minuten ruhen lassen.<br>
+                <br>
+                Das Fleisch mit kleingehackten Zwiebeln, Butter, Sahne, Pfeffer und Gewürzen vermengen.
+                Den Teig zu einem Strang (1,5 - 2 cm) rollen und Stücke abschneiden (1 - 1,5 cm). Aus diesen 
+                Teilen Plätzchen rollen. Man kann den Teig auch bis zu einer Dicke von ca. 2 mm ausrollen und dann mit einem 
+                Glas runde Stücke ausschneiden.
+                <br>
+                <br>
+                Darauf mithilfe eines Löffels die Fleischmasse legen, das Fleisch im Teig einschließen und die Ränder zudrücken. 
+                Die Pelmeni in kochendes Salzwasser oder in Brühe legen. Nachdem das Wasser wieder aufkocht und die Pelmeni an 
+                die Oberfläche schwimmen, noch ca. 2 - 3 min ziehen lassen.<br>
+                <br>
+                <br>
+                Wasser abgießen. Pelmini in eine Schüssel geben und mit Butterflocken bedecken. Die Pelmeni kann man mit Butter, 
+                mit Schmand, mit Essig oder mit der Mischung aus gehacktem Knoblauch oder Zwiebeln, Pflanzenöl, Essig, Salz und 
+                Pfeffer servieren.
+            </p>
+        </section>
+
+        <section class="creator">
+            <h3>Rezept erstellt von</h3>
+            <div class="Personal_Profile_Recipe">
+                <img class="Profil_personal_img" src="/img/jb-profile.png" alt="Profilbild Dmitrii Schilling">
+                <p>Dmitrii Schilling</p>
+            </div>
+        </section>
     </main>
     <!-- to
      Download per PDF
@@ -140,7 +166,7 @@
         <a class="navigation_logo" href="index.html">
             <img class="navigation_logo_img" src="./img/logo.png" alt="Kochweltlogo"></a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
