@@ -123,7 +123,6 @@ button {
 .homepage_section2 {
     background-color: #EFEFEF;
     width: 100%;
-    min-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
