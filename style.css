@@ -214,15 +214,24 @@ footer {
     max-width: 1440px;
     min-width: 1440px;
     display: flex;
-    align-items: flex-start;
-    position: absolute;
-    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 24px;
+}
+.footer-social-media{
+    width: 32px;
 }
 
 .navigation_logo {
     max-width: 1440px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 
 }
 
