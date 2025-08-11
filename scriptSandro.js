@@ -21,8 +21,8 @@ function berechneZutatenSandro(portionenSandro) {
         Pasta: 125 * portionenSandro,
         Pancetta: 12 * portionenSandro,
         Ei: 1 * portionenSandro,
-        Parmesan: 0.5 * portionenSandro,
-        Pecorino: 1 * portionenSandro,
+        Parmesan: 20 * portionenSandro,
+        Pecorino: 20 * portionenSandro,
     };
 }
 
