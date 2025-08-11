@@ -25,7 +25,7 @@ function berechneZutatenDmitrii(portionenDmitrii) {
         Hackfleisch: 100 * portionenDmitrii,
         Butter: 12.5 * portionenDmitrii,
         Sahne: 0.75 * portionenDmitrii,
-        Zwiebeln: 0.5 * portionenDmitrii,
+        Zwiebel: 0.5 * portionenDmitrii,
         Butter: 0.5 * portionenDmitrii,
         Essig: 0.75 * portionenDmitrii,
     };
@@ -40,11 +40,18 @@ function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
         MehlText = zutatenDmitrii.Mehl + ' g Mehl';
     }
 
+    let HackfleischText;
+    if (zutatenDmitrii.Hackfleisch >= 1000) {
+        HackfleischText = (zutatenDmitrii.Hackfleisch / 1000) + ' Kg Hackfleisch';
+    } else {
+        HackfleischText = zutatenDmitrii.Hackfleisch + ' g Hackfleisch';
+    }
+
     document.getElementById('ingredient1Dmitrii').textContent = MehlText;
     document.getElementById('ingredient2Dmitrii').textContent = zutatenDmitrii.Eier + ' Eier';
     document.getElementById('ingredient3Dmitrii').textContent = zutatenDmitrii.Wasser + ' ml Wasser';
     document.getElementById('ingredient4Dmitrii').textContent = zutatenDmitrii.Salz + ' TL Salz';
-    document.getElementById('ingredient5Dmitrii').textContent = zutatenDmitrii.Hackfleisch + ' g Hackfleisch';
+    document.getElementById('ingredient5Dmitrii').textContent = HackfleischText;
     document.getElementById('ingredient6Dmitrii').textContent = zutatenDmitrii.Butter + ' g Butter';
     document.getElementById('ingredient7Dmitrii').textContent = zutatenDmitrii.Sahne + ' EL Sahne';
     document.getElementById('ingredient8Dmitrii').textContent = zutatenDmitrii.Zwiebel + ' Zwiebel(n)';
