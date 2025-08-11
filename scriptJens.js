@@ -35,7 +35,7 @@ function updateZutatenAnzeigenJens(zutatenJens) {
 
     let SchweinegulaschText;
     if (zutatenJens.Schweinegulasch >= 1000) {
-        SchweinegulaschText = (zutatenJens.SSchweinegulasch / 1000) + ' Kg Schweinegulasch';
+        SchweinegulaschText = (zutatenJens.Schweinegulasch / 1000) + ' Kg Schweinegulasch';
     } else {
         SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
     }
