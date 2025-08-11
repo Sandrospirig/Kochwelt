@@ -20,6 +20,7 @@ function berechneZutatenSandro(portionenSandro) {
     return {
         Pasta: 125 * portionenSandro,
         Pancetta: 12 * portionenSandro,
+        Ei: 1 * portionenSandro,
         Parmesan: 0.5 * portionenSandro,
         Pecorino: 1 * portionenSandro,
     };
@@ -36,6 +37,7 @@ function updateZutatenAnzeigenSandro(zutatenSandro) {
 
     document.getElementById('ingredient1Sandro').textContent = PastaText;
     document.getElementById('ingredient2Sandro').textContent = zutatenSandro.Pancetta + ' g Pancetta';
-    document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Parmesan + ' g Parmesan';
-    document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Pecorino + ' g Pecorino';
+    document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Ei + ' Ei(er)';
+    document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Parmesan + ' g Parmesan';
+    document.getElementById('ingredient5Sandro').textContent = zutatenSandro.Pecorino + ' g Pecorino';
 }
