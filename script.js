@@ -79,11 +79,11 @@ function berechneZutatenJens(portionenJens) {
 
 function updateZutatenAnzeigenJens(zutatenJens) {
 
-    let SpaghettiText;
-    if (zutatenJens.Spaghetti >= 1000) {
-        SpaghettiText = (zutatenJens.Spaghetti / 1000) + ' Kg Spaghetti';
+    let SchweinegulaschText;
+    if (zutatenJens.Schweinegulasch >= 1000) {
+        SchweinegulaschText = (zutatenJens.SSchweinegulasch/ 1000) + ' Kg Schweinegulasch';
     } else {
-        SpaghettiText = zutatenJens.Spaghetti + ' g Spaghetti';
+        SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
     }
 
     document.getElementById('ingredient1Jens').textContent = SchweinegulaschText;
@@ -165,30 +165,38 @@ document.getElementById('calculateButtonDmitrii').addEventListener('click', func
 
 function berechneZutatenDmitrii(portionenDmitrii) {
     return {
-        Spaghetti: 125 * portionenDmitrii,
-        SpeckoderSchinkenwürfeli: 12 * portionenDmitrii,
-        Knoblauchzehen: 0.5 * portionenDmitrii,
-        Eier: 1 * portionenDmitrii,
-        Rahm: 0.25 * portionenDmitrii,
-        SbrinzAOPoderParminogeriebeng: 18 * portionenDmitrii
+        Mehl: 100 * portionenDmitrii,
+        Eier: 0.5 * portionenDmitrii,
+        Wasser: 37.5 * portionenDmitrii,
+        Salz: 0.125 * portionenDmitrii,
+        Hackfleisch: 100 * portionenDmitrii,
+        Butter: 12.5 * portionenDmitrii,
+        Sahne: 0.75 * portionenDmitrii,
+        Zwiebeln: 0.5 * portionenDmitrii,
+        Butter: 0.5 * portionenDmitrii,
+        Essig: 0.75 * portionenDmitrii,
     };
 }
 
 function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
 
-    let SpaghettiText;
-    if (zutatenSandro.Spaghetti >= 1000) {
-        SpaghettiText = (zutatenDmitrii.Spaghetti / 1000) + ' Kg Spaghetti';
+    let MehlText;
+    if (zutatenDmitrii.Mehl >= 1000) {
+        MehlText = (zutatenDmitrii.Mehl / 1000) + ' Kg Mehl';
     } else {
-        SpaghettiText = zutatenDmitrii.Spaghetti + ' g Spaghetti';
+        MehlText = zutatenDmitrii.Mehl + ' g Mehl';
     }
 
-    document.getElementById('ingredient1Dmitrii').textContent = SpaghettiText;
-    document.getElementById('ingredient2Dmitrii').textContent = zutatenDmitrii.SpeckoderSchinkenwürfeli + ' g Speck oder Schinkenwürfeli';
-    document.getElementById('ingredient3Dmitrii').textContent = zutatenDmitrii.Knoblauchzehen + ' Knochblauchzehen';
-    document.getElementById('ingredient4Dmitrii').textContent = zutatenDmitrii.Eier + ' Eier';
-    document.getElementById('ingredient5Dmitrii').textContent = zutatenDmitrii.Rahm + ' dl Rahm';
-    document.getElementById('ingredient6Dmitrii').textContent = zutatenDmitrii.SbrinzAOPoderParminogeriebeng + ' g SbrinzAOP oder Parminogeriebeng';
+    document.getElementById('ingredient1Dmitrii').textContent = MehlText;
+    document.getElementById('ingredient2Dmitrii').textContent = zutatenDmitrii.Eier + ' Eier';
+    document.getElementById('ingredient3Dmitrii').textContent = zutatenDmitrii.Wasser + ' ml Wasser';
+    document.getElementById('ingredient4Dmitrii').textContent = zutatenDmitrii.Salz + ' TL Salz';
+    document.getElementById('ingredient5Dmitrii').textContent = zutatenDmitrii.Hackfleisch + ' g Hackfleisch';
+    document.getElementById('ingredient6Dmitrii').textContent = zutatenDmitrii.Butter + ' g Butter';
+    document.getElementById('ingredient7Dmitrii').textContent = zutatenDmitrii.Sahne + ' EL Sahne';
+    document.getElementById('ingredient8Dmitrii').textContent = zutatenDmitrii.Zwiebel + ' Zwiebel(n)';
+    document.getElementById('ingredient9Dmitrii').textContent = zutatenDmitrii.Butter + ' EL Butter';
+    document.getElementById('ingredient10Dmitrii').textContent = zutatenDmitrii.Essig + ' EL Essig';
 }
 
 // Kontaktformular
