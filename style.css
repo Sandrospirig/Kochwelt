@@ -38,8 +38,8 @@ a {
 a:hover {
     text-decoration: underline;
     color: #018000;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 17px;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
 }
 
 .navigation {
@@ -63,7 +63,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex: 1;
 }
 
 .navigation_left img {
@@ -75,16 +74,17 @@ a:hover {
     min-width: 720px;
     max-width: 720px;
     margin-right: 0;
+    padding-right: 24px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .navigationbar {
     color: black;
     font-size: 18px;
     padding-left: 18px;
-    padding-bottom: 16px;
+    padding-bottom: 5px;
 
 }
 
@@ -116,7 +116,6 @@ a:hover {
     border-radius: 8px;
     display: flex;
     justify-content: flex-end;
-    padding-left: 24px; /*MW*/
 }
 
 button {
@@ -598,6 +597,21 @@ tr:nth-child(odd) {
         display: none;
     }
 
+    a {
+        padding-left: 16px;
+    }
+
+    .navigation_left {
+        max-width: 240px;
+        justify-content: center;
+    }
+
+    .navigation_logo {
+        justify-content: center;
+        min-width: 560px;
+        justify-content: flex-end;
+    }
+
     h1 {
         font-size: 22px;
     }
@@ -623,10 +637,31 @@ tr:nth-child(odd) {
     .creator {
         max-width: 671px;
         width: 100%;
+
+
+    .homepage_section2 {
+        width: 100%;
+    }
+
+    .recipe_overview {
+        padding-right: 16px;
+        max-width: 720px;
+        width: 700px;
+    }
+
+    .blog {
+        max-width: 720px;
+        min-width: 720px;
+    }
+
+    .potato-image img {
+        padding-right: 8px;
+
     }
 }
 
 @media (max-width: 719px) {
+
     .daily-recipe img {
         width: 272px;
        
@@ -682,4 +717,70 @@ tr:nth-child(odd) {
         margin-right: 0;
         margin-bottom: 8px;
     }
+
+    .navigation_left {
+        max-width: 240px;
+        justify-content: center;
+    }
+
+    .navigation_logo {
+        justify-content: center;
+        min-width: 420px;
+        justify-content: flex-end;
+    }
+
+    .navigation_left img {
+        width: 120px;
+    }
+
+    .homepage_section1 {
+        max-width: 420px;
+        flex-direction: column;
+    }
+
+    .half_section {
+        max-width: 420px;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .half-section {
+        padding-left: 0;
+    }
+
+    .homepage_section1 img {
+        padding-left: 0;
+
+    }
+
+    .recipe_overview {
+        flex-direction: column;
+        max-width: 420px;
+        padding-right: 0;
+    }
+
+    .recipes {
+        margin-bottom: 24px;
+    }
+
+    .homepage_section2_image_link1 {
+        padding-left: 0;
+    }
+
+    .homepage_section2 img {
+        width: 240px;
+    }
+
+    .homepage_section3 {
+        max-width: 420px;
+        flex-direction: column;
+    }
+
+    .blog {
+        max-width: 420px;
+        min-width: 420px;
+    }
+    
 }
+
+
