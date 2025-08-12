@@ -64,7 +64,7 @@ let CremefraicheText;
     document.getElementById('ingredient3Jens').textContent = zutatenJens.Senf + '  TL Senf';
     document.getElementById('ingredient4Jens').textContent = zutatenJens.Tomatenmark + ' EL Tomatenmark';
     document.getElementById('ingredient5Jens').textContent = zutatenJens.großeZwiebeln + ' große Zwiebel(n)';
-    document.getElementById('ingredient6Jens').textContent = zutatenJens.Knoblauchzehen + ' Knoblauchzehen';
+    document.getElementById('ingredient6Jens').textContent = zutatenJens.Knoblauchzehen + ' Knoblauchzehe(n)';
     document.getElementById('ingredient7Jens').textContent = zutatenJens.Karotte + ' Karotte(n)';
     document.getElementById('ingredient8Jens').textContent = BierText;
     document.getElementById('ingredient9Jens').textContent = GemüsebrüheText;

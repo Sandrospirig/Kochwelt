@@ -40,9 +40,9 @@ function updateZutatenAnzeigenMatthias(zutatenMatthias) {
 
     let KartoffelText;
     if (zutatenMatthias.Kartoffel >= 1000) {
-        KartoffelText = (zutatenMatthias.Kartoffel / 1000) + ' kg Kartoffel';
+        KartoffelText = (zutatenMatthias.Kartoffel / 1000) + ' kg Kartoffeln';
     } else {
-        KartoffelText = zutatenMatthias.Kartoffel + ' g Kartoffel';
+        KartoffelText = zutatenMatthias.Kartoffel + ' g Kartoffeln';
     }
 
     let LauchText;
