@@ -35,14 +35,14 @@ function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
 
     let MehlText;
     if (zutatenDmitrii.Mehl >= 1000) {
-        MehlText = (zutatenDmitrii.Mehl / 1000) + ' Kg Mehl';
+        MehlText = (zutatenDmitrii.Mehl / 1000) + ' kg Mehl';
     } else {
         MehlText = zutatenDmitrii.Mehl + ' g Mehl';
     }
 
     let HackfleischText;
     if (zutatenDmitrii.Hackfleisch >= 1000) {
-        HackfleischText = (zutatenDmitrii.Hackfleisch / 1000) + ' Kg Hackfleisch';
+        HackfleischText = (zutatenDmitrii.Hackfleisch / 1000) + ' kg Hackfleisch';
     } else {
         HackfleischText = zutatenDmitrii.Hackfleisch + ' g Hackfleisch';
     }

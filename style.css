@@ -27,6 +27,14 @@ a {
     color: black;
 }
 
+.img_no_padding {
+    padding: 0!important; /*MW Bilder und H2 gleich */
+}
+
+.img_no_padding {
+    padding: 0!important; /*MW Bilder und H2 gleich */
+}
+
 a:hover {
     text-decoration: underline;
     color: #018000;
@@ -97,17 +105,18 @@ a:hover {
     display: flex;
     justify-content: center;
     text-align: left;
-    margin-right: 64px;
+    /*margin-right: 64px;*/ /*MW*/
     margin-bottom: 60px;
 
 }
 
 .homepage_section1 img {
-    width: 560px;
+    width: 672px; /* 560px MW*/
     height: auto;
     border-radius: 8px;
     display: flex;
     justify-content: flex-end;
+    padding-left: 24px; /*MW*/
 }
 
 button {
@@ -141,6 +150,7 @@ button {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 48px;
+    margin-left: 24px; /*MW*/
 }
 
 .homepage_section2 img {
@@ -196,6 +206,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 24px; /*MW*/
 }
 
 h2 {
@@ -403,8 +414,8 @@ tr:nth-child(odd) {
 
 
 .contact_form {
-    height: 400px;
-    width: 320px;
+    height: 500px;
+    width: 400px;
     padding: 12px;
     background-color: #dcdcdc;
     display: flex;
@@ -423,20 +434,22 @@ tr:nth-child(odd) {
     width: auto;
     border-color: #dcdcdc;
     border-radius: 6px;
-    height: 20px;
+    height: 24px;
     margin-bottom: 24px;
     border-width: 0px;
 }
-
-.contact_form_input_message {
-    height: 160px;
+.form-text{
+    font-size: 16px;
+}
+.contact_form_input_message{
+    height: 240px;
     resize: none;
 }
 
 .contact_form_headline {
     margin-bottom: 32px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight:600;
     color: #232323;
 }
 
@@ -505,7 +518,7 @@ tr:nth-child(odd) {
     }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1500px) { /*MW changed to 1500 - 1439px*/
 
     .homepage_section1 {
         max-width: 1024px;
@@ -526,7 +539,7 @@ tr:nth-child(odd) {
 
     .homepage_section2 img {
         width: 160px;
-        height: auto;
+        height: 160px; /*MW*/
     }
 
     .recipe_overview {
