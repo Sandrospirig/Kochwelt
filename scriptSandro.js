@@ -19,8 +19,8 @@ document.getElementById('calculateButtonSandro').addEventListener('click', funct
 function berechneZutatenSandro(portionenSandro) {
     return {
         Pasta: 125 * portionenSandro,
-        Pancetta: 12 * portionenSandro,
-        Ei: 1 * portionenSandro,
+        Pancetta: 25 * portionenSandro,
+        Ei: 0.5 * portionenSandro,
         Parmesan: 20 * portionenSandro,
         Pecorino: 20 * portionenSandro,
     };
@@ -30,7 +30,7 @@ function updateZutatenAnzeigenSandro(zutatenSandro) {
 
     let PastaText;
     if (zutatenSandro.Pasta >= 1000) {
-        PastaText = (zutatenSandro.Pasta / 1000) + ' Kg Pasta';
+        PastaText = (zutatenSandro.Pasta / 1000) + ' kg Pasta';
     } else {
         PastaText = zutatenSandro.Pasta + ' g Pasta';
     }
