@@ -38,8 +38,8 @@ a {
 a:hover {
     text-decoration: underline;
     color: #018000;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 17px;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
 }
 
 .navigation {
@@ -74,16 +74,17 @@ a:hover {
     min-width: 720px;
     max-width: 720px;
     margin-right: 0;
+    padding-right: 24px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .navigationbar {
     color: black;
     font-size: 18px;
     padding-left: 18px;
-    padding-bottom: 16px;
+    padding-bottom: 5px;
 
 }
 
@@ -209,6 +210,7 @@ button {
 
 h2 {
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -293,6 +295,7 @@ footer {
     padding-right: 10px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .icon {
@@ -393,7 +396,6 @@ tr:nth-child(odd) {
     font-size: 24px;
     font-weight: 600;
     margin-top: 32px;
-    margin-left: 24px;
     margin-bottom: 0;
 }
 
@@ -408,6 +410,9 @@ tr:nth-child(odd) {
     width: 100px;
     margin-right: 16px;
     margin-bottom: 48px;
+}
+.Profil_personal_img{
+    border-radius: 50%;
 }
 
 
