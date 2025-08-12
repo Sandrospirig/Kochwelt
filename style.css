@@ -17,15 +17,11 @@ a {
     color: black;
 }
 
-p {
-    margin-right: 48px;
-}
-
 a:hover{
     text-decoration: underline;
     color: #018000;
     text-decoration-thickness: 3px;
-    text-underline-offset: 6px;
+    text-underline-offset: 17px;
 }
 
 .navigation {
@@ -60,6 +56,7 @@ a:hover{
     height: 100%;
     min-width: 720px;
     max-width: 720px;
+    margin-right: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;    
@@ -91,7 +88,6 @@ a:hover{
     display: flex;
     justify-content: center;
     text-align: left;
-    padding-left: 48px;
     margin-right: 64px;
     margin-bottom: 60px;
 
@@ -101,7 +97,6 @@ a:hover{
     width: 560px;
     height: auto;
     border-radius: 8px;
-    margin-left: 24px;
     display: flex;
     justify-content: flex-end;
 }
@@ -148,7 +143,6 @@ button {
 .recipe_overview {
     max-width: 1440px;
     width: 1440px;
-    margin-left: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +168,6 @@ button {
     width: 240px;
     height: auto;
     border-radius: 4px;
-    margin-left: 48px;
     margin-right: 64px;
 }
 
@@ -189,9 +182,8 @@ button {
 
 .blog-container {
     max-width: 1440px;
-    margin-left: 48px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -200,6 +192,12 @@ button {
     max-width: 840px;
 }
 
+.potato-image img {
+    width: 240px;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end
+}
 footer {
     position: absolute;
     margin-bottom: 0;
