@@ -19,7 +19,7 @@ function berechneZutatenJens(portionenJens) {
     return {
         Schweinegulasch: 125 * portionenJens,
         Butterschmalz: 0.5 * portionenJens,
-        Senf: 0.15 * portionenJens,
+        Senf: 0.25 * portionenJens,
         Tomatenmark: 0.25 * portionenJens,
         großeZwiebeln: 0.25 * portionenJens,
         Knoblauchzehen: 0.25 * portionenJens,
@@ -27,7 +27,7 @@ function berechneZutatenJens(portionenJens) {
         Bier: 50 * portionenJens,
         Gemüsebrühe: 150 * portionenJens,
         Paprikapulver: 0.25 * portionenJens,
-        Cremefraiche: 0.25 * portionenJens,
+        Cremefraiche: 50 * portionenJens,
     };
 }
 
@@ -35,7 +35,7 @@ function updateZutatenAnzeigenJens(zutatenJens) {
 
     let SchweinegulaschText;
     if (zutatenJens.Schweinegulasch >= 1000) {
-        SchweinegulaschText = (zutatenJens.Schweinegulasch / 1000) + ' Kg Schweinegulasch';
+        SchweinegulaschText = (zutatenJens.Schweinegulasch / 1000) + ' kg Schweinegulasch';
     } else {
         SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
     }
@@ -52,6 +52,13 @@ function updateZutatenAnzeigenJens(zutatenJens) {
         GemüsebrüheText = zutatenJens.Gemüsebrühe + ' ml Gemüsebrühe';
     }
 
+let CremefraicheText;
+    if (zutatenJens.Cremefraiche >= 1000) {
+        CremefraicheText = (zutatenJens.Cremefraiche / 1000) + ' L Crème fraîche';
+    } else {
+        CremefraicheText = zutatenJens.Cremefraiche + ' ml Crème fraîche';
+    }
+
     document.getElementById('ingredient1Jens').textContent = SchweinegulaschText;
     document.getElementById('ingredient2Jens').textContent = zutatenJens.Butterschmalz + ' EL Butterschmalz';
     document.getElementById('ingredient3Jens').textContent = zutatenJens.Senf + '  TL Senf';
@@ -62,5 +69,5 @@ function updateZutatenAnzeigenJens(zutatenJens) {
     document.getElementById('ingredient8Jens').textContent = BierText;
     document.getElementById('ingredient9Jens').textContent = GemüsebrüheText;
     document.getElementById('ingredient10Jens').textContent = zutatenJens.Paprikapulver + ' TL Paprikapulver';
-    document.getElementById('ingredient11Jens').textContent = zutatenJens.Cremefraiche + ' ml Crème fraîche';
+    document.getElementById('ingredient11Jens').textContent = CremefraicheText;
 }
