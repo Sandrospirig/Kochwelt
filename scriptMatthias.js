@@ -59,5 +59,5 @@ function updateZutatenAnzeigenMatthias(zutatenMatthias) {
     document.getElementById('ingredient5Matthias').textContent = KartoffelText;
     document.getElementById('ingredient6Matthias').textContent = LauchText;
     document.getElementById('ingredient7Matthias').textContent = zutatenMatthias.Paprikaschote + ' Paprikaschote(n)';
-    document.getElementById('ingredient8Matthias').textContent = zutatenMatthias.Cremefraiche + ' g Creme fraiche';
+    document.getElementById('ingredient8Matthias').textContent = zutatenMatthias.Cremefraiche + ' g Crème fraîche';
 }
