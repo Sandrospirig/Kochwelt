@@ -63,7 +63,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex: 1;
 }
 
 .navigation_left img {
@@ -116,7 +115,6 @@ a:hover {
     border-radius: 8px;
     display: flex;
     justify-content: flex-end;
-    padding-left: 24px; /*MW*/
 }
 
 button {
@@ -579,6 +577,21 @@ tr:nth-child(odd) {
         display: none;
     }
 
+    a {
+        padding-left: 16px;
+    }
+
+    .navigation_left {
+        max-width: 240px;
+        justify-content: center;
+    }
+
+    .navigation_logo {
+        justify-content: center;
+        min-width: 560px;
+        justify-content: flex-end;
+    }
+
     h1 {
         font-size: 22px;
     }
@@ -589,4 +602,91 @@ tr:nth-child(odd) {
     .homepage_section1 {
         max-width: 720px;
     }
+
+    .homepage_section2 {
+        width: 100%;
+    }
+
+    .recipe_overview {
+        padding-right: 16px;
+        max-width: 720px;
+        width: 700px;
+    }
+
+    .blog {
+        max-width: 720px;
+        min-width: 720px;
+    }
+
+    .potato-image img {
+        padding-right: 8px;
+    }
 }
+
+@media (max-width: 719px) {
+
+    .navigation_left {
+        max-width: 240px;
+        justify-content: center;
+    }
+
+    .navigation_logo {
+        justify-content: center;
+        min-width: 420px;
+        justify-content: flex-end;
+    }
+
+    .navigation_left img {
+        width: 120px;
+    }
+
+    .homepage_section1 {
+        max-width: 420px;
+        flex-direction: column;
+    }
+
+    .half_section {
+        max-width: 420px;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .half-section {
+        padding-left: 0;
+    }
+
+    .homepage_section1 img {
+        padding-left: 0;
+
+    }
+
+    .recipe_overview {
+        flex-direction: column;
+        max-width: 420px;
+        padding-right: 0;
+    }
+
+    .recipes {
+        margin-bottom: 24px;
+    }
+
+    .homepage_section2_image_link1 {
+        padding-left: 0;
+    }
+
+    .homepage_section2 img {
+        width: 240px;
+    }
+
+    .homepage_section3 {
+        max-width: 420px;
+        flex-direction: column;
+    }
+
+    .blog {
+        max-width: 420px;
+        min-width: 420px;
+    }
+    
+}
+
