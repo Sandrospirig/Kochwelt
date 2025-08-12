@@ -19,7 +19,7 @@ function berechneZutatenJens(portionenJens) {
     return {
         Schweinegulasch: 125 * portionenJens,
         Butterschmalz: 0.5 * portionenJens,
-        Senf: 0.13 * portionenJens,
+        Senf: 0.15 * portionenJens,
         Tomatenmark: 0.25 * portionenJens,
         großeZwiebeln: 0.25 * portionenJens,
         Knoblauchzehen: 0.25 * portionenJens,
