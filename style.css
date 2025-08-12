@@ -41,7 +41,6 @@ a:hover{
 .navigation_left {
     height: 100%;
     max-width: 720px;
-    margin-left: 24px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -72,10 +71,9 @@ a:hover{
 
 .half_section {
     max-width: 720px;
-    min-width: 720px;
     width: 100%;
-    padding-left: 48px;
-    padding-right: 64px;
+    padding-left: 24px;
+    /* padding-right: 64px; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -173,9 +171,10 @@ button {
 
 .blog {    
     max-width: 1440px;
+    min-width: 1440px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
     flex-direction: column;
     text-align: left;
 }
@@ -185,6 +184,10 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 
@@ -473,6 +476,60 @@ tr:nth-child(odd) {
         width: 140px;
         padding: 6px;
     }
+    }
+
+    @media (max-width: 1439px) {
+
+        .homepage_section1 {
+            max-width: 1024px;
+        }
+        
+        .homepage_section1 img {
+            width: 240px;
+        }
+
+        .half-section {
+            max-width: 512px;
+            padding-left: 16px;
+        }
+
+        .half_section {
+            max-width: 512px;
+        }
+
+        .homepage_section2 img {
+            width: 160px;
+            height: auto;
+        }
+
+        .recipe_overview {
+            justify-content: space-evenly;
+            max-width: 1024px;
+        }
+
+        .homepage_section3 {
+            max-width: 1024px;
+        }
+
+        .blog-container {
+            justify-content: space-evenly;
+        }
+
+        .potato-image img {
+            width: 160px;
+            padding-right: 16px;
+            justify-content: flex-start;
+        }
+
+        .blog-letter {
+            padding: 16px;
+        }
+
+        .blog {
+            max-width: 1024px;
+            min-width: 1024px;
+        }
+
     }
 
 
