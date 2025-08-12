@@ -13,6 +13,7 @@ body {
 
 h1 {
     font-size: 2rem;
+    margin: 0;
 }
 
 h2 {
@@ -118,6 +119,9 @@ a:hover {
     border-radius: 8px;
     display: flex;
     justify-content: flex-end;
+}
+.homepage_section1_text{
+    margin-bottom: 125px;
 }
 
 button {
@@ -247,18 +251,26 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footer-left {
     filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+    height: 100%;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .footer-right {
+    height: 100%;
+    min-width: 720px;
+    max-width: 720px;
+    margin-right: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 24px;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .footer-social-media {
@@ -272,6 +284,12 @@ footer {
     align-items: center;
 
 }
+.navigation_logo_img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 56px;
+    }
 
 .recipeoftheday {
     width: 100%;
@@ -501,8 +519,8 @@ tr:nth-child(odd) {
 @media (min-width: 1920px) {
 
     .contact_form {
-        height: 480px;
-        width: 400px;
+        height: 600px;
+        width: 500px;
         padding: 14px;
         font-size: 13px;
     }
@@ -536,16 +554,12 @@ tr:nth-child(odd) {
     }
 
     .homepage_section1 img {
-        width: 240px;
-    }
-
-    .half-section {
-        max-width: 512px;
-        padding-left: 16px;
+        width: 435px;
     }
 
     .half_section {
         max-width: 512px;
+        justify-content: flex-start;
     }
 
     .homepage_section2 img {
