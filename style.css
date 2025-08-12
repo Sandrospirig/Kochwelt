@@ -38,8 +38,8 @@ a {
 a:hover {
     text-decoration: underline;
     color: #018000;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 17px;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
 }
 
 .navigation {
@@ -75,16 +75,17 @@ a:hover {
     min-width: 720px;
     max-width: 720px;
     margin-right: 0;
+    padding-right: 24px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .navigationbar {
     color: black;
     font-size: 18px;
     padding-left: 18px;
-    padding-bottom: 16px;
+    padding-bottom: 5px;
 
 }
 
