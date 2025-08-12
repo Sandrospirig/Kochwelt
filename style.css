@@ -1,7 +1,6 @@
-
 @font-face {
     font-family: kochweltFont;
-    src:url("./Raleway/Raleway-VariableFont_wght.ttf");
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
 }
 
 body {
@@ -11,6 +10,16 @@ body {
     font-family: "kochweltFont", sans-serif;
 
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
 
 a {
     padding-left: 24px;
@@ -22,7 +31,11 @@ a {
     padding: 0!important; /*MW Bilder und H2 gleich */
 }
 
-a:hover{
+.img_no_padding {
+    padding: 0!important; /*MW Bilder und H2 gleich */
+}
+
+a:hover {
     text-decoration: underline;
     color: #018000;
     text-decoration-thickness: 3px;
@@ -36,7 +49,8 @@ a:hover{
     width: 100%;
     height: 100px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: white;;
+    background-color: white;
+    ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +77,7 @@ a:hover{
     margin-right: 0;
     display: flex;
     align-items: flex-end;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .navigationbar {
@@ -71,7 +85,7 @@ a:hover{
     font-size: 18px;
     padding-left: 18px;
     padding-bottom: 16px;
-    
+
 }
 
 .half_section {
@@ -114,6 +128,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 .tagesgericht_headline {
     font-size: 24px;
     font-weight: 600;
@@ -176,7 +191,7 @@ button {
     margin-right: 64px;
 }
 
-.blog {    
+.blog {
     max-width: 1440px;
     min-width: 1440px;
     display: flex;
@@ -210,6 +225,7 @@ h2 {
     display: flex;
     justify-content: flex-end
 }
+
 footer {
     position: absolute;
     margin-bottom: 0;
@@ -230,16 +246,19 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+
 .footer-left {
     filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 }
-.footer-right{
+
+.footer-right {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 24px;
 }
-.footer-social-media{
+
+.footer-social-media {
     width: 32px;
 }
 
@@ -292,11 +311,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
     flex-direction: row;
-    padding: 8px;    
+    padding: 8px;
 }
-.icon img{
+
+.icon img {
     width: 20px;
     height: 20px;
     padding-right: 8px;
@@ -329,8 +349,8 @@ input {
 }
 
 tr:nth-child(odd) {
-  background-color: #EFEFEF;
-  width: 100%;
+    background-color: #EFEFEF;
+    width: 100%;
 }
 
 .ingredients-table {
@@ -341,7 +361,7 @@ tr:nth-child(odd) {
 }
 
 .recipe_descrition_details {
-   background-color: #EFEFEF;
+    background-color: #EFEFEF;
     width: 120px;
     height: 24px;
     color: black;
@@ -353,9 +373,9 @@ tr:nth-child(odd) {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
     flex-direction: row;
-    padding: 8px;     
+    padding: 8px;
 }
 
 .recipe_descrition_details img {
@@ -411,15 +431,16 @@ tr:nth-child(odd) {
     border-radius: 16px;
     font-size: 12px;
     color: #606060;
-    
+
 }
-.contact_form_input{
-   width: auto;
-   border-color: #dcdcdc;
-   border-radius: 6px;
-   height: 24px;
-   margin-bottom:  24px;
-   border-width: 0px;
+
+.contact_form_input {
+    width: auto;
+    border-color: #dcdcdc;
+    border-radius: 6px;
+    height: 24px;
+    margin-bottom: 24px;
+    border-width: 0px;
 }
 .form-text{
     font-size: 16px;
@@ -428,13 +449,15 @@ tr:nth-child(odd) {
     height: 240px;
     resize: none;
 }
-.contact_form_headline{
+
+.contact_form_headline {
     margin-bottom: 32px;
-    font-size: 24px;
-    font-weight:700;
+    font-size: 16px;
+    font-weight:600;
     color: #232323;
 }
-.contact_form_input_submit{
+
+.contact_form_input_submit {
     width: 120px;
     padding: 6px;
     padding-left: 14px;
@@ -448,10 +471,12 @@ tr:nth-child(odd) {
     margin-left: auto;
     margin-right: auto;
 }
-.send_mail{
+
+.send_mail {
     margin-top: 160px;
 }
-.impressum{
+
+.impressum {
     margin-left: auto;
     margin-right: auto;
     margin-top: 160px;
@@ -468,85 +493,104 @@ tr:nth-child(odd) {
 }
 
 @media (min-width: 1920px) {
-    
+
     .contact_form {
         height: 480px;
         width: 400px;
         padding: 14px;
         font-size: 13px;
     }
+
     .contact_form_headline {
         margin-bottom: 34px;
         font-size: 18px;
     }
+
     .contact_form_input {
         height: 28px;
         margin-bottom: 32px;
-    
+
     }
+
     .contact_form_input_message {
         height: 200px;
     }
+
     .contact_form_input_submit {
         width: 140px;
         padding: 6px;
     }
+}
+
+@media (max-width: 1500px) { /*MW changed to 1500 - 1439px*/
+
+    .homepage_section1 {
+        max-width: 1024px;
     }
 
-    @media (max-width: 1500px) { /*MW changed to 1500 - 1439px*/
-
-        .homepage_section1 {
-            max-width: 1024px;
-        }
-        
-        .homepage_section1 img {
-            width: 240px;
-        }
-
-        .half-section {
-            max-width: 512px;
-            padding-left: 16px;
-        }
-
-        .half_section {
-            max-width: 512px;
-        }
-
-        .homepage_section2 img {
-            width: 160px;
-            height: 160px; /*MW*/
-        }
-
-        .recipe_overview {
-            padding-right: 16px;
-            max-width: 1024px;
-            width: 1000px;
-        }
-
-        .homepage_section3 {
-            max-width: 1024px;
-        }
-
-        .blog-container {
-            justify-content: space-evenly;
-        }
-
-        .potato-image img {
-            width: 160px;
-            padding-right: 16px;
-            justify-content: flex-start;
-        }
-
-        .blog-letter {
-            padding: 16px;
-        }
-
-        .blog {
-            max-width: 1024px;
-            min-width: 1024px;
-        }
-
+    .homepage_section1 img {
+        width: 240px;
     }
 
+    .half-section {
+        max-width: 512px;
+        padding-left: 16px;
+    }
 
+    .half_section {
+        max-width: 512px;
+    }
 
+    .homepage_section2 img {
+        width: 160px;
+        height: 160px; /*MW*/
+    }
+
+    .recipe_overview {
+        padding-right: 16px;
+        max-width: 1024px;
+        width: 1000px;
+    }
+
+    .homepage_section3 {
+        max-width: 1024px;
+    }
+
+    .blog-container {
+        justify-content: space-evenly;
+    }
+
+    .potato-image img {
+        width: 160px;
+        padding-right: 16px;
+        justify-content: flex-start;
+    }
+
+    .blog-letter {
+        padding: 16px;
+    }
+
+    .blog {
+        max-width: 1024px;
+        min-width: 1024px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    .navigationbar {
+        display: none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .homepage_section1 {
+        max-width: 720px;
+    }
+}
