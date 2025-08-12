@@ -234,7 +234,7 @@ h2 {
 }
 
 footer {
-    position: absolute;
+
     margin-bottom: 0;
     margin-left: 0;
     height: 160px;
@@ -500,11 +500,21 @@ tr:nth-child(odd) {
     margin-top: 160px;
 }
 
-.impressum {
+.impressum_inner {
     margin-left: auto;
     margin-right: auto;
     margin-top: 160px;
     max-width: 1440px;
+    flex: 1 !important; 
+
+    
+}
+.impressum{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .wrapper {
