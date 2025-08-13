@@ -682,13 +682,31 @@ tr:nth-child(odd) {
     }
     .navi_logo_small{
     display: none;
-}
+    }
+    .footer-left {
+        justify-content: center;
+    }
+
+    .footer-right {
+        min-width: 512px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1442px) {
 
     .navigation_right {
         justify-content: flex-start;
+    }
+
+    .footer-right {
+        min-width: 256px;
+        justify-content: flex-end;
+    }
+
+    .footer-left {
+        justify-content: flex-end;
+        max-width: 256px;
     }
 
 }
@@ -781,10 +799,10 @@ tr:nth-child(odd) {
     height: 400px;
     width: 300px;
 
-}
+    }
 .footer-left {
 max-width: 270px;
-justify-content: flex-end;
+justify-content: center;
 }
 
 .footer-right {
