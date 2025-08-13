@@ -690,11 +690,17 @@ tr:nth-child(odd) {
     }
 
     .footer-right {
-        min-width: unset;
+        min-width: 256px;
+        justify-content: flex-end;
     }
 
-    .footer-left-1500 {
-        justify-content: flex-start !important;
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .footer-left {
+        max-width: 126px;
+        justify-content: center;
     }
 }
 
@@ -706,12 +712,16 @@ tr:nth-child(odd) {
 
     .footer-right {
         min-width: 256px;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+    }
+
+    .footer {
+        justify-content: space-evenly;
     }
 
     .footer-left {
+        max-width: 126px;
         justify-content: center;
-        min-width: 256px;
     }
 
 }
@@ -996,19 +1006,18 @@ tr:nth-child(odd) {
         height: 60px;
     }
 
-    .footer-left {
-        max-width: 32px;
-        justify-content: flex-start;
-    }
-
     .footer-right {
         min-width: 256px;
-        justify-content: center;
-        padding-right: 0px;
+        justify-content: flex-end;
     }
 
-    .footer-left-1500 {
-        display: none;
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .footer-left {
+        max-width: 126px;
+        justify-content: flex-start;
     }
 
 
@@ -1112,7 +1121,7 @@ tr:nth-child(odd) {
 
 
     .footer-right {
-        min-width: 240px;
+        min-width: 128px;
     }
 
     .navigation_logo_img {
