@@ -703,8 +703,8 @@ tr:nth-child(odd) {
     }
 
     .footer-left {
-        justify-content: flex-end;
-        max-width: 256px;
+        justify-content: center;
+        min-width: 256px;
     }
 
 }
