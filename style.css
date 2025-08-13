@@ -1136,6 +1136,9 @@ tr:nth-child(odd) {
     #buttonkontakt {
         margin-left: 40px;
     }
+    .recipe_descrition_details {
+        margin-right: 0;
+    }
 }
 
 @media (min-height: 1600px) {
