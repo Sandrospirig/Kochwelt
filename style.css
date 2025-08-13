@@ -91,7 +91,8 @@ a:hover {
     background-color: #EEEEEE;
     display: flex;
     position: absolute;
-    border-radius: 4px;;
+    border-radius: 4px;
+    ;
     top: 100px;
     right: 24px;
     flex-direction: column;
@@ -752,6 +753,10 @@ tr:nth-child(odd) {
 
 @media (max-width: 719px) {
 
+    h1 {
+        margin-top: 16px;
+    }
+
     .daily-recipe img {
         width: 272px;
 
@@ -763,6 +768,10 @@ tr:nth-child(odd) {
 
     .burger_menu {
         top: 60px;
+    }
+
+    .navigationbar {
+        font-size: 16px;;
     }
 
     .icon img {
@@ -925,7 +934,8 @@ tr:nth-child(odd) {
         max-width: 100px;
         min-width: 100px;
         width: 100%
-    } */ /*JB removed*/
+    } */
+    /*JB removed*/
 
 
 }
