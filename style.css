@@ -567,6 +567,9 @@ tr:nth-child(odd) {
 .navi_logo_small{
     display: none;
 }
+#buttonkontakt{
+  margin-left: 120px;
+}
 
 @media (min-width: 1920px) {
 
@@ -779,11 +782,11 @@ padding-right: 0px;
     width: 32px;
 }
 
-.navigation_logo_img {
-
-}
 .navi_logo_small{
     display: none;
+}
+#buttonkontakt{
+  margin-left: 70px;
 }
 }
 
@@ -1051,6 +1054,13 @@ min-width: 240px;
 }
 .navigation_logo_img{
     display: none;
+}
+.contact_form {
+    height: 300px;
+    width: 250px;
+}
+#buttonkontakt{
+  margin-left: 40px;
 }
 }
 
