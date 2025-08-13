@@ -841,6 +841,14 @@ tr:nth-child(odd) {
         min-width: 420px;
     }
 
+    .navigation {
+        height: 60px;
+    }
+
+    footer {
+        height: 60px;
+    }
+
 }
 
 @media (max-width: 560px) {
@@ -892,4 +900,6 @@ tr:nth-child(odd) {
     .recipe_overview {
         max-width: 320px;
     }
+
+    
 }
