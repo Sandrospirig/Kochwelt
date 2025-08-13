@@ -563,7 +563,7 @@ tr:nth-child(odd) {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 260px);
+    height: calc(100vh - 160px);
 }
 
 .navi_logo_small {
