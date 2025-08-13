@@ -693,7 +693,7 @@ tr:nth-child(odd) {
     .navigation_logo {
         justify-content: center;
         min-width: 560px;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     h1 {
