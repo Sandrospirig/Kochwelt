@@ -682,15 +682,13 @@ tr:nth-child(odd) {
     }
     .navi_logo_small{
     display: none;
-    }
-    .footer-left {
-        justify-content: center;
-    }
-
-    .footer-right {
-        min-width: 512px;
-        justify-content: center;
-    }
+}
+.footer-right {
+    min-width: unset;
+}
+.footer-left-1500 {
+    justify-content: flex-start !important;
+}
 }
 
 @media (max-width: 1442px) {
@@ -736,10 +734,10 @@ tr:nth-child(odd) {
         justify-content: center;
     }
 
+
     .navigation_logo {
-        justify-content: center;
         min-width: 560px;
-        justify-content: center;
+        justify-content: center !important;
         margin-left: 36px;
     }
 
@@ -1052,7 +1050,7 @@ padding-right: 0px;
 
     .navigation_left {
         max-width: 160px;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .navigation_logo {
