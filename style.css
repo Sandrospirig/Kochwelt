@@ -808,6 +808,9 @@ padding-right: 0px;
         width: 272px;
 
     }
+    .recipeoftheday {
+        margin-top: 0;
+    }
 
     .navigation_right {
         min-width: 320px;
