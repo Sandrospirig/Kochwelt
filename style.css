@@ -300,13 +300,13 @@ footer {
 }
 
 .footer-right {
-    height: 100%;
-    min-width: 720px;
-    max-width: 720px;
+    min-width: 770px;
+    max-width: 770px;
     margin-right: 0;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    padding-right: 24px;
 }
 
 .footer-social-media {
@@ -484,7 +484,7 @@ tr:nth-child(odd) {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 16px;
@@ -563,6 +563,9 @@ tr:nth-child(odd) {
     width: 100%;
     height: calc(100vh - 160px);
 }
+.navi_logo_small{
+    display: none;
+}
 
 @media (min-width: 1920px) {
 
@@ -592,6 +595,9 @@ tr:nth-child(odd) {
         width: 140px;
         padding: 6px;
     }
+    .navi_logo_small{
+    display: none;
+}
 }
 
 @media (max-width: 1500px) {
@@ -664,6 +670,9 @@ tr:nth-child(odd) {
         max-width: 975px;
         width: 100%;
     }
+    .navi_logo_small{
+    display: none;
+}
 }
 
 @media (max-width: 1023px) {
@@ -748,6 +757,33 @@ tr:nth-child(odd) {
         padding-right: 8px;
 
     }
+    .contact_form {
+    height: 400px;
+    width: 300px;
+
+}
+.footer-left {
+max-width: 270px;
+justify-content: flex-end;
+}
+
+.footer-right {
+min-width: 360px;
+justify-content: flex-end;
+padding-right: 0px;
+}
+
+
+.footer-social-media {
+    width: 32px;
+}
+
+.navigation_logo_img {
+
+}
+.navi_logo_small{
+    display: none;
+}
 }
 
 @media (max-width: 719px) {
@@ -903,7 +939,32 @@ tr:nth-child(odd) {
     footer {
         height: 60px;
     }
+.footer-left {
+max-width: 32px;
+justify-content: flex-end;
+}
 
+.footer-right {
+min-width: 420px;
+justify-content: flex-end;
+padding-right: 0px;
+}
+
+
+.footer-social-media {
+    width: 32px;
+}
+
+.wrapper{
+   height: calc(100vh - 50px);
+}
+.navigation_logo_img{
+    display: none;
+}
+.navi_logo_small{
+    display: inline;
+    width: 32px;
+}
 }
 
 @media (max-width: 560px) {
@@ -975,4 +1036,10 @@ tr:nth-child(odd) {
     }
 
 
+.footer-right {
+min-width: 240px;
+}
+.navigation_logo_img{
+    display: none;
+}
 }
