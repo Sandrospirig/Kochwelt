@@ -686,9 +686,6 @@ tr:nth-child(odd) {
 .footer-right {
     min-width: unset;
 }
-.footer-left-1500 {
-    justify-content: flex-start !important;
-}
 }
 
 @media (max-width: 1442px) {
