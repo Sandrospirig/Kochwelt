@@ -11,22 +11,32 @@
 
 <body>
     <header>
-        <nav class="navigation">
-            <div class="navigation_left">
-                <a class="navigation_logo" href="index.html">
-                    <img src="./img/logo.png" alt="Kochweltlogo"></a>
-            </div>
+    <nav class="navigation">
+      <div class="navigation_left">
+        <a class="navigation_logo" href="index.html">
+          <img src="./img/logo.png" alt="Kochweltlogo"></a>
+      </div>
 
-            <div class="navigation_right">
-                <nav class="navigationbar">
-                    <a href="index.html">Start</a>
-                    <a href="Jensgoulasch.html">Rezept des Tages</a>
-                    <a href="kontakt.html">Kontakt</a>
-                    <a href="impressum.html">Impressum</a>
-                </nav>
-            </div>
+      <div class="navigation_right">
+        <nav class="navigationbar">
+          <a class="hide" href="index.html">Start</a>
+          <a class="hide" href="Jensgoulasch.html">Rezept des Tages</a>
+          <a class="hide" href="kontakt.html">Kontakt</a>
+          <a class="hide" href="impressum.html">Impressum</a>
+          <button onclick="showHideMobileMenu()" class="mobile_menu">
+            <img src="./img/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="mobile menu open/close">
+          </button>
+          <div id="resp_menu" class="burger_menu menu_close">
+
+            <a class="mobile_links" href="index.html">Start</a>
+            <a class="mobile_links" href="Jensgoulasch.html">Rezept des Tages</a>
+            <a class="mobile_links" href="kontakt.html">Kontakt</a>
+            <a class="mobile_links" href="impressum.html">Impressum</a>
+          </div>
         </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
     <main class="recipeoftheday">
 
         <section class="daily-recipe">
@@ -146,6 +156,7 @@
         </section>
     </main>
     <footer></footer>
+  <script src="./script.js"></script>
     <script src="scriptJens.js"></script>
 </body>
 

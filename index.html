@@ -1,83 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt Homepage</title>
-    <link rel="icon" type="icon" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="./style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt Homepage</title>
+  <link rel="icon" type="icon" href="./img/logo_small.png" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
 
   <header>
     <nav class="navigation">
-        <div class="navigation_left">
-          <a class="navigation_logo" href="index.html">
-            <img src="./img/logo.png" alt="Kochweltlogo"></a>
-        </div>
+      <div class="navigation_left">
+        <a class="navigation_logo" href="index.html">
+          <img src="./img/logo.png" alt="Kochweltlogo"></a>
+      </div>
 
-        <div class="navigation_right">
-          <nav class="navigationbar">
-            <a href="index.html">Start</a>
-            <a href="Jensgoulasch.html">Rezept des Tages</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="impressum.html">Impressum</a>
-          </nav>
-        </div>
+      <div class="navigation_right">
+        <nav class="navigationbar">
+          <a class="hide" href="index.html">Start</a>
+          <a class="hide" href="Jensgoulasch.html">Rezept des Tages</a>
+          <a class="hide" href="kontakt.html">Kontakt</a>
+          <a class="hide" href="impressum.html">Impressum</a>
+          <button onclick="showHideMobileMenu()" class="mobile_menu">
+            <img src="./img/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="mobile menu open/close">
+          </button>
+          <div id="resp_menu" class="burger_menu menu_close">
+
+            <a class="mobile_links" href="index.html">Start</a>
+            <a class="mobile_links" href="Jensgoulasch.html">Rezept des Tages</a>
+            <a class="mobile_links" href="kontakt.html">Kontakt</a>
+            <a class="mobile_links" href="impressum.html">Impressum</a>
+          </div>
+        </nav>
+      </div>
     </nav>
   </header>
-  <main class="recipeoftheday">  
-      <section class="homepage_section1">
-        <div class="half-section">
-          <img class="img_tagesgericht" src="./img/goulash.jpg" alt="Goulasch" />
-          </div>
-          <div class="half_section">
-          <h1>Jens' Goulasch</h1>
-          <p class="homepage_section1_text">Gulasch ist eine Fleischspeise ungarischen Ursprungs. Was in allen anderen Ländern „Gulasch“, „Gulyas“ oder „goulash“ heißt, ist jedoch in Ungarn das Pörkölt bzw. Paprikás</p>
-          <a href="Jensgoulasch.html" style="padding-left: 0;"><button>Rezept Öffnen</button></a>
-          </div>
-      </section>
-
-      <section class="homepage_section2">
-          <h2>Lust auf was Neues?</h2>
-          <div class="recipe_overview">
-        <div class="recipes">
-          <a class="homepage_section2_image_link1" href="/SandrosCarbonar1.html"><img class="img_sandrorezept" src="./img/spaghetti-carbonara-2560x1920.png" alt="Carbonara" /></a>
-          <span class="homepage_section2_images_captions">Sandros Carbonara</span>
-          </div>
-
-
-          <div class="recipes"> 
-              <a class="homepage_section2_image_link2 img_no_padding" href="/LeberkaspfanneMatthias.html"><img class="img_matthiasrezept" src="./img/lerberkaspfanne.png" alt="Leberkaspfanne" /></a>
-              <span class="homepage_section2_images_captions">Leberkas Pfanne</span>
-              </div>
-
-          <div class="recipes">
-              <a class="homepage_section2_image_link3 img_no_padding" href="/DmitriiPelmeni.html"><img class="img_dimitrirezept" src="./img/Pelmeni.png" alt="Pelmeni" /></a>
-              <span class="homepage_section2_images_captions">Dmitrii Pelmeni</span>
-              </div>
+  <main class="recipeoftheday">
+    <section class="homepage_section1">
+      <div class="half-section">
+        <img class="img_tagesgericht" src="./img/goulash.jpg" alt="Goulasch" />
       </div>
-              
-      </section>
+      <div class="half_section">
+        <h1>Jens' Goulasch</h1>
+        <p class="homepage_section1_text">Gulasch ist eine Fleischspeise ungarischen Ursprungs. Was in allen anderen
+          Ländern „Gulasch“, „Gulyas“ oder „goulash“ heißt, ist jedoch in Ungarn das Pörkölt bzw. Paprikás</p>
+        <a href="Jensgoulasch.html" style="padding-left: 0;"><button>Rezept Öffnen</button></a>
+      </div>
+    </section>
 
-     <section class="homepage_section3">
+    <section class="homepage_section2">
+      <h2>Lust auf was Neues?</h2>
+      <div class="recipe_overview">
+        <div class="recipes">
+          <a class="homepage_section2_image_link1" href="/SandrosCarbonar1.html"><img class="img_sandrorezept"
+              src="./img/spaghetti-carbonara-2560x1920.png" alt="Carbonara" /></a>
+          <span class="homepage_section2_images_captions">Sandros Carbonara</span>
+        </div>
+
+
+        <div class="recipes">
+          <a class="homepage_section2_image_link2 img_no_padding" href="/LeberkaspfanneMatthias.html"><img
+              class="img_matthiasrezept" src="./img/lerberkaspfanne.png" alt="Leberkaspfanne" /></a>
+          <span class="homepage_section2_images_captions">Leberkas Pfanne</span>
+        </div>
+
+        <div class="recipes">
+          <a class="homepage_section2_image_link3 img_no_padding" href="/DmitriiPelmeni.html"><img
+              class="img_dimitrirezept" src="./img/Pelmeni.png" alt="Pelmeni" /></a>
+          <span class="homepage_section2_images_captions">Dmitrii Pelmeni</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="homepage_section3">
       <div class="blog">
         <h2>Ist eine Süßkartoffel gesünder als normale Kartoffeln?</h2>
         <div class="blog-container">
           <div>
-          <p class="blog-letter">Im Vergleich: Die Kartoffel enthält weniger Kohlenhydrate und Ballaststoffe als die Süßkartoffel, allerdings im Verhältnis auch weniger Fett. Neben Kohlenhydraten punkten Süßkartoffeln auch mit vielen Vitaminen und Mineralstoffen. Sie enthalten zum Beispiel mehr Calcium, Vitamin C und Vitamin E als Kartoffeln</p>
+            <p class="blog-letter">Im Vergleich: Die Kartoffel enthält weniger Kohlenhydrate und Ballaststoffe als die
+              Süßkartoffel, allerdings im Verhältnis auch weniger Fett. Neben Kohlenhydraten punkten Süßkartoffeln auch
+              mit vielen Vitaminen und Mineralstoffen. Sie enthalten zum Beispiel mehr Calcium, Vitamin C und Vitamin E
+              als Kartoffeln</p>
           </div>
           <div class="potato-image">
-          <img src="./img/potato.jpg" alt="potato"/>
+            <img src="./img/potato.jpg" alt="potato" />
           </div>
         </div>
       </div>
     </section>
-  </div>
-  </div>
+    </div>
+    </div>
   </main>
-    <footer></footer>
-    <script src="script.js"></script>
-  </body>
+  <footer></footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
