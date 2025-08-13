@@ -1033,7 +1033,7 @@ tr:nth-child(odd) {
     }
 
     .wrapper {
-        height: calc(100vh - 160px);
+        height: calc(100vh - 60px);
     }
 
     .navigation_logo_img {
