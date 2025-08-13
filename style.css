@@ -554,7 +554,7 @@ tr:nth-child(odd) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 .wrapper {
@@ -563,7 +563,7 @@ tr:nth-child(odd) {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 260px);
 }
 
 .navi_logo_small {
@@ -1033,7 +1033,7 @@ tr:nth-child(odd) {
     }
 
     .wrapper {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 160px);
     }
 
     .navigation_logo_img {
