@@ -685,6 +685,14 @@ tr:nth-child(odd) {
 }
 }
 
+@media (max-width: 1442px) {
+
+    .navigation_right {
+        justify-content: flex-start;
+    }
+
+}
+
 @media (max-width: 1023px) {
 
     .hide {
