@@ -18,6 +18,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 
@@ -63,6 +65,7 @@ a:hover {
 .navigation_left {
     height: 100%;
     max-width: 720px;
+    min-width: 720px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -252,12 +255,6 @@ button {
     margin-left: 24px;
     /*MW*/
 }
-
-h2 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
 
 .blog-letter {
     max-width: 840px;
@@ -611,6 +608,13 @@ tr:nth-child(odd) {
         max-width: 1024px;
     }
 
+    .navigation_logo {
+        min-width: 760px;
+        max-width: 1024px;
+        width: 100%;
+        justify-content: center;
+    }
+
     .homepage_section1 img {
         width: 435px;
     }
@@ -700,13 +704,15 @@ tr:nth-child(odd) {
 
     .navigation_left {
         max-width: 240px;
+        min-width: 120px;
         justify-content: center;
     }
 
     .navigation_logo {
         justify-content: center;
         min-width: 560px;
-        justify-content: flex-end;
+        justify-content: center;
+        margin-left: 36px;
     }
 
     h1 {
@@ -877,6 +883,7 @@ padding-right: 0px;
 
     .navigation_left {
         max-width: 240px;
+        min-width: 1px;
         justify-content: center;
     }
 
