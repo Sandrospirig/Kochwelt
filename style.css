@@ -301,7 +301,7 @@ footer {
 }
 
 .footer-right {
-    min-width: 770px;
+    min-width: 1225px;
     max-width: 770px;
     margin-right: 0;
     display: flex;
