@@ -554,7 +554,7 @@ tr:nth-child(odd) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 
 .wrapper {
@@ -1153,6 +1153,11 @@ tr:nth-child(odd) {
     body {
         display: grid;
         grid-template-rows: 100px 1fr auto;
-
+    }
+    .impressum {
+        height: calc(100vh - 100px);
+    }
+    .wrapper {
+        height: calc(100vh - 260px);
     }
 }
