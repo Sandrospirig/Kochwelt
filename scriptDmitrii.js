@@ -11,12 +11,12 @@ document.getElementById('calculateButtonDmitrii').addEventListener('click', func
         return //{alert();} 
     }
 
-    let zutatenDmitrii = berechneZutatenDmitrii(portionenDmitrii);
+    let IngredientsDmitrii = calcIngredientsDmitrii(portionenDmitrii);
 
-    updateZutatenAnzeigenDmitrii(zutatenDmitrii);
+    updateIngredientsDmitrii(IngredientsDmitrii);
 });
 
-function berechneZutatenDmitrii(portionenDmitrii) {
+function calcIngredientsDmitrii(portionenDmitrii) {
     return {
         Mehl: 100 * portionenDmitrii,
         Eier: 0.5 * portionenDmitrii,
@@ -31,30 +31,30 @@ function berechneZutatenDmitrii(portionenDmitrii) {
     };
 }
 
-function updateZutatenAnzeigenDmitrii(zutatenDmitrii) {
+function updateIngredientsDmitrii(IngredientsDmitrii) {
 
-    let MehlText;
-    if (zutatenDmitrii.Mehl >= 1000) {
-        MehlText = (zutatenDmitrii.Mehl / 1000) + ' kg Mehl';
+    let MehlWord;
+    if (IngredientsDmitrii.Mehl >= 1000) {
+        MehlWord = (IngredientsDmitrii.Mehl / 1000) + ' kg Mehl';
     } else {
-        MehlText = zutatenDmitrii.Mehl + ' g Mehl';
+        MehlWord = IngredientsDmitrii.Mehl + ' g Mehl';
     }
 
-    let HackfleischText;
-    if (zutatenDmitrii.Hackfleisch >= 1000) {
-        HackfleischText = (zutatenDmitrii.Hackfleisch / 1000) + ' kg Hackfleisch';
+    let HackfleischWord;
+    if (IngredientsDmitrii.Hackfleisch >= 1000) {
+        HackfleischWord = (IngredientsDmitrii.Hackfleisch / 1000) + ' kg Hackfleisch';
     } else {
-        HackfleischText = zutatenDmitrii.Hackfleisch + ' g Hackfleisch';
+        HackfleischWord = IngredientsDmitrii.Hackfleisch + ' g Hackfleisch';
     }
 
-    document.getElementById('ingredient1Dmitrii').textContent = MehlText;
-    document.getElementById('ingredient2Dmitrii').textContent = zutatenDmitrii.Eier + ' Eier';
-    document.getElementById('ingredient3Dmitrii').textContent = zutatenDmitrii.Wasser + ' ml Wasser';
-    document.getElementById('ingredient4Dmitrii').textContent = zutatenDmitrii.Salz + ' TL Salz';
-    document.getElementById('ingredient5Dmitrii').textContent = HackfleischText;
-    document.getElementById('ingredient6Dmitrii').textContent = zutatenDmitrii.Butter + ' g Butter';
-    document.getElementById('ingredient7Dmitrii').textContent = zutatenDmitrii.Sahne + ' EL Sahne';
-    document.getElementById('ingredient8Dmitrii').textContent = zutatenDmitrii.Zwiebel + ' Zwiebel(n)';
-    document.getElementById('ingredient9Dmitrii').textContent = zutatenDmitrii.Butter + ' EL Butter';
-    document.getElementById('ingredient10Dmitrii').textContent = zutatenDmitrii.Essig + ' EL Essig';
+    document.getElementById('ingredient1Dmitrii').textContent = MehlWord;
+    document.getElementById('ingredient2Dmitrii').textContent = IngredientsDmitrii.Eier + ' Eier';
+    document.getElementById('ingredient3Dmitrii').textContent = IngredientsDmitrii.Wasser + ' ml Wasser';
+    document.getElementById('ingredient4Dmitrii').textContent = IngredientsDmitrii.Salz + ' TL Salz';
+    document.getElementById('ingredient5Dmitrii').textContent = HackfleischWord;
+    document.getElementById('ingredient6Dmitrii').textContent = IngredientsDmitrii.Butter + ' g Butter';
+    document.getElementById('ingredient7Dmitrii').textContent = IngredientsDmitrii.Sahne + ' EL Sahne';
+    document.getElementById('ingredient8Dmitrii').textContent = IngredientsDmitrii.Zwiebel + ' Zwiebel(n)';
+    document.getElementById('ingredient9Dmitrii').textContent = IngredientsDmitrii.Butter + ' EL Butter';
+    document.getElementById('ingredient10Dmitrii').textContent = IngredientsDmitrii.Essig + ' EL Essig';
 }

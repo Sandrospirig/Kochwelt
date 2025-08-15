@@ -10,12 +10,12 @@ document.getElementById('calculateButtonJens').addEventListener('click', functio
         return //{alert();} 
     }
 
-    let zutatenJens = berechneZutatenJens(portionenJens);
+    let IngredientsJens = calcIngredientsJens(portionenJens);
 
-    updateZutatenAnzeigenJens(zutatenJens);
+    updateIngredientsJens(IngredientsJens);
 });
 
-function berechneZutatenJens(portionenJens) {
+function calcIngredientsJens(portionenJens) {
     return {
         Schweinegulasch: 125 * portionenJens,
         Butterschmalz: 0.5 * portionenJens,
@@ -31,43 +31,43 @@ function berechneZutatenJens(portionenJens) {
     };
 }
 
-function updateZutatenAnzeigenJens(zutatenJens) {
+function updateIngredientsJens(IngredientsJens) {
 
-    let SchweinegulaschText;
-    if (zutatenJens.Schweinegulasch >= 1000) {
-        SchweinegulaschText = (zutatenJens.Schweinegulasch / 1000) + ' kg Schweinegulasch';
+    let SchweinegulaschWord;
+    if (IngredientsJens.Schweinegulasch >= 1000) {
+        SchweinegulaschWord = (IngredientsJens.Schweinegulasch / 1000) + ' kg Schweinegulasch';
     } else {
-        SchweinegulaschText = zutatenJens.Schweinegulasch + ' g Schweinegulasch';
+        SchweinegulaschWord = IngredientsJens.Schweinegulasch + ' g Schweinegulasch';
     }
-    let BierText;
-    if (zutatenJens.Bier >= 1000) {
-        BierText = (zutatenJens.Bier / 1000) + ' L Bier';
+    let BierWord;
+    if (IngredientsJens.Bier >= 1000) {
+        BierWord = (IngredientsJens.Bier / 1000) + ' L Bier';
     } else {
-        BierText = zutatenJens.Bier + ' ml Bier';
+        BierWord = IngredientsJens.Bier + ' ml Bier';
     }
-    let GemüsebrüheText;
-    if (zutatenJens.Gemüsebrühe >= 1000) {
-        GemüsebrüheText = (zutatenJens.Gemüsebrühe / 1000) + ' L Gemüsebrühe';
+    let GemüsebrüheWord;
+    if (IngredientsJens.Gemüsebrühe >= 1000) {
+        GemüsebrüheWord = (IngredientsJens.Gemüsebrühe / 1000) + ' L Gemüsebrühe';
     } else {
-        GemüsebrüheText = zutatenJens.Gemüsebrühe + ' ml Gemüsebrühe';
-    }
-
-let CremefraicheText;
-    if (zutatenJens.Cremefraiche >= 1000) {
-        CremefraicheText = (zutatenJens.Cremefraiche / 1000) + ' L Crème fraîche';
-    } else {
-        CremefraicheText = zutatenJens.Cremefraiche + ' ml Crème fraîche';
+        GemüsebrüheWord = IngredientsJens.Gemüsebrühe + ' ml Gemüsebrühe';
     }
 
-    document.getElementById('ingredient1Jens').textContent = SchweinegulaschText;
-    document.getElementById('ingredient2Jens').textContent = zutatenJens.Butterschmalz + ' EL Butterschmalz';
-    document.getElementById('ingredient3Jens').textContent = zutatenJens.Senf + '  TL Senf';
-    document.getElementById('ingredient4Jens').textContent = zutatenJens.Tomatenmark + ' EL Tomatenmark';
-    document.getElementById('ingredient5Jens').textContent = zutatenJens.großeZwiebeln + ' große Zwiebel(n)';
-    document.getElementById('ingredient6Jens').textContent = zutatenJens.Knoblauchzehen + ' Knoblauchzehe(n)';
-    document.getElementById('ingredient7Jens').textContent = zutatenJens.Karotte + ' Karotte(n)';
-    document.getElementById('ingredient8Jens').textContent = BierText;
-    document.getElementById('ingredient9Jens').textContent = GemüsebrüheText;
-    document.getElementById('ingredient10Jens').textContent = zutatenJens.Paprikapulver + ' TL Paprikapulver';
-    document.getElementById('ingredient11Jens').textContent = CremefraicheText;
+let CremefraicheWord;
+    if (IngredientsJens.Cremefraiche >= 1000) {
+        CremefraicheWord = (IngredientsJens.Cremefraiche / 1000) + ' L Crème fraîche';
+    } else {
+        CremefraicheWord = IngredientsJens.Cremefraiche + ' ml Crème fraîche';
+    }
+
+    document.getElementById('ingredient1Jens').textContent = SchweinegulaschWord;
+    document.getElementById('ingredient2Jens').textContent = IngredientsJens.Butterschmalz + ' EL Butterschmalz';
+    document.getElementById('ingredient3Jens').textContent = IngredientsJens.Senf + '  TL Senf';
+    document.getElementById('ingredient4Jens').textContent = IngredientsJens.Tomatenmark + ' EL Tomatenmark';
+    document.getElementById('ingredient5Jens').textContent = IngredientsJens.großeZwiebeln + ' große Zwiebel(n)';
+    document.getElementById('ingredient6Jens').textContent = IngredientsJens.Knoblauchzehen + ' Knoblauchzehe(n)';
+    document.getElementById('ingredient7Jens').textContent = IngredientsJens.Karotte + ' Karotte(n)';
+    document.getElementById('ingredient8Jens').textContent = BierWord;
+    document.getElementById('ingredient9Jens').textContent = GemüsebrüheWord;
+    document.getElementById('ingredient10Jens').textContent = IngredientsJens.Paprikapulver + ' TL Paprikapulver';
+    document.getElementById('ingredient11Jens').textContent = CremefraicheWord;
 }
