@@ -14,7 +14,8 @@ body {
 h1 {
     font-size: 2rem;
     margin: 0;
-    margin-bottom: 16px;;
+    margin-bottom: 16px;
+    ;
 }
 
 h2 {
@@ -166,7 +167,8 @@ a:hover {
 
 .homepage_section1_text {
     margin-bottom: auto;
-    padding-bottom: 32px;;
+    padding-bottom: 32px;
+    ;
 }
 
 button {
@@ -371,7 +373,7 @@ footer {
     margin-right: 24px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
 
     flex-direction: row;
     padding: 8px;
@@ -381,6 +383,7 @@ footer {
     width: 20px !important;
     height: 20px !important;
     padding-right: 8px;
+    border-radius: 0 !important;
 }
 
 .ingredients-container {
@@ -571,8 +574,8 @@ tr:nth-child(odd) {
 }
 
 #buttonkontakt {
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 1920px) {
@@ -607,10 +610,11 @@ tr:nth-child(odd) {
     .navi_logo_small {
         display: none;
     }
-    .contact_form_input_message{
+
+    .contact_form_input_message {
         height: 300px;
     }
-    
+
 }
 
 @media (max-width: 1500px) {
@@ -860,13 +864,12 @@ tr:nth-child(odd) {
 
     .navigationbar {
         font-size: 16px;
-        ;
     }
 
     .ingredients-container {
         width: 272px;
         min-width: 272px;
-        margin-top: 8px;
+        margin-top: 24px;
         align-items: center;
     }
 
@@ -1029,20 +1032,32 @@ tr:nth-child(odd) {
         display: inline;
         width: 32px;
     }
+
     .recipe_descrition_details {
         margin-right: 0;
     }
+
     .blog-container {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
     }
+
     .blog-letter {
         padding: 0;
     }
+
     .potato-image img {
         padding-right: 0px;
 
+    }
+
+    .recipeoftheday {
+        margin-top: 80px;
+    }
+
+    .impressum_inner {
+        margin-top: 80px;
     }
 }
 
@@ -1139,10 +1154,11 @@ tr:nth-child(odd) {
         margin-left: auto;
         margin-right: auto;
     }
+
     .homepage_section1 {
         max-width: 304px;
     }
-  
+
 }
 
 @media (min-height: 1600px) {
@@ -1150,13 +1166,22 @@ tr:nth-child(odd) {
         display: grid;
         grid-template-rows: 100px 1fr auto;
     }
+
     .impressum {
         height: calc(100vh - 100px);
     }
+
     .wrapper {
         height: calc(100vh - 260px);
     }
+
     .recipeoftheday {
         justify-content: unset;
+    }
+}
+
+@media (max-width: 600px) and (max-height: 1035px) {
+    .impressum {
+        height: unset;
     }
 }

@@ -52,7 +52,7 @@ function updateIngredientsJens(IngredientsJens) {
         GemüsebrüheWord = IngredientsJens.Gemüsebrühe + ' ml Gemüsebrühe';
     }
 
-let CremefraicheWord;
+    let CremefraicheWord;
     if (IngredientsJens.Cremefraiche >= 1000) {
         CremefraicheWord = (IngredientsJens.Cremefraiche / 1000) + ' L Crème fraîche';
     } else {

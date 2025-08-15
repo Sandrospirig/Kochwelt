@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt</title>
-    <link rel="icon" type="icon" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="./style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+  <link rel="icon" type="icon" href="./img/logo_small.png" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
 
   <header>
     <nav class="navigation">
@@ -38,31 +39,35 @@
     </nav>
   </header>
   <main class="wrapper">
-      <form onsubmit="sendMail(event)" class="contact_form">
-         <div class="contact_form_headline">Kontaktiere uns</div>
-         <label class="form-text" for="name">Dein Name:</label>
-         <input class="contact_form_input" id="name" name="name" type="text" required>
-         <label class="form-text" for="email">Deine E-Mail:</label>
-         <input class="contact_form_input" id="email" name="email" type="email" required>
-         <label class="form-text" for="message">Deine Nachricht:</label>
-         <textarea class="contact_form_input contact_form_input_message" name="message" id="message" type="text" required></textarea>
-         <button id="buttonkontakt">Abschicken</button>
-      </form>
+    <form onsubmit="sendMail(event)" class="contact_form">
+      <div class="contact_form_headline">Kontaktiere uns</div>
+      <label class="form-text" for="name">Dein Name:</label>
+      <input class="contact_form_input" id="name" name="name" type="text" required>
+      <label class="form-text" for="email">Deine E-Mail:</label>
+      <input class="contact_form_input" id="email" name="email" type="email" required>
+      <label class="form-text" for="message">Deine Nachricht:</label>
+      <textarea class="contact_form_input contact_form_input_message" name="message" id="message" type="text"
+        required></textarea>
+      <button id="buttonkontakt">Abschicken</button>
+    </form>
   </main>
   <footer>
-        <div class="footer">
-       <div class="footer-left">   
+    <div class="footer">
+      <div class="footer-left">
         <a class="footer-logo" href="index.html">
-            <img class="navigation_logo_img" src="./img/logo.png" alt="Kochweltlogo"></a>
-            <img class="navi_logo_small" src="./img/logo_small.png" alt="Kochweltlogoklein">
-       </div>       
-                <div class="footer-right">
-                <a href="https://www.facebook.com/" target="_blank"><img class="footer-social-media" src="./img/icons/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="footer-social-media" src="./img/icons/instagram.png" alt="instagramm"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="footer-social-media" src="./img/icons/twitter.png" alt="twitter"></a>
-            </div>
-       </div>     
-    </footer>
-  </body>
- <script src="scriptkontakt.js"></script>
- <script src="./script.js"></script>
+          <img class="navigation_logo_img" src="./img/logo.png" alt="Kochweltlogo"></a>
+        <img class="navi_logo_small" src="./img/logo_small.png" alt="Kochweltlogoklein">
+      </div>
+      <div class="footer-right">
+        <a href="https://www.facebook.com/" target="_blank"><img class="footer-social-media"
+            src="./img/icons/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="footer-social-media"
+            src="./img/icons/instagram.png" alt="instagramm"></a>
+        <a href="https://www.twitter.com" target="_blank"><img class="footer-social-media" src="./img/icons/twitter.png"
+            alt="twitter"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="scriptkontakt.js"></script>
+<script src="./script.js"></script>
