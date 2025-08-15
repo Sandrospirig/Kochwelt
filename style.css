@@ -1146,4 +1146,7 @@ tr:nth-child(odd) {
     .wrapper {
         height: calc(100vh - 260px);
     }
+    .recipeoftheday {
+        justify-content: unset;
+    }
 }
