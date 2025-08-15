@@ -14,7 +14,8 @@ body {
 h1 {
     font-size: 2rem;
     margin: 0;
-    margin-bottom: 16px;;
+    margin-bottom: 16px;
+    ;
 }
 
 h2 {
@@ -165,7 +166,9 @@ a:hover {
 }
 
 .homepage_section1_text {
-    margin-bottom: 125px;
+    margin-bottom: auto;
+    padding-bottom: 32px;
+    ;
 }
 
 button {
@@ -361,25 +364,26 @@ footer {
 
 .icon {
     background-color: #EFEFEF;
-    width: 80px;
+    /*width: 80px;*/
     height: 20px;
     color: black;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 16px;
     margin-right: 24px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
 
     flex-direction: row;
     padding: 8px;
 }
 
 .icon img {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     padding-right: 8px;
+    border-radius: 0 !important;
 }
 
 .ingredients-container {
@@ -422,12 +426,11 @@ tr:nth-child(odd) {
 
 .recipe_descrition_details {
     background-color: #EFEFEF;
-    width: 120px;
     height: 24px;
     color: black;
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 16px;
     margin-right: 24px;
     display: flex;
@@ -571,8 +574,8 @@ tr:nth-child(odd) {
 }
 
 #buttonkontakt {
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 1920px) {
@@ -607,10 +610,11 @@ tr:nth-child(odd) {
     .navi_logo_small {
         display: none;
     }
-    .contact_form_input_message{
+
+    .contact_form_input_message {
         height: 300px;
     }
-    
+
 }
 
 @media (max-width: 1500px) {
@@ -674,11 +678,6 @@ tr:nth-child(odd) {
     .daily-recipe img {
         width: 975px;
 
-    }
-
-    .icon img {
-        width: 16px !important;
-        height: 16px;
     }
 
     .ingredients-container {
@@ -765,11 +764,11 @@ tr:nth-child(odd) {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .homepage_section1 {
@@ -779,11 +778,6 @@ tr:nth-child(odd) {
     .daily-recipe img {
         width: 671px;
 
-    }
-
-    .icon img {
-        width: 12px !important;
-        height: 12px;
     }
 
     .ingredients-container {
@@ -856,7 +850,7 @@ tr:nth-child(odd) {
     }
 
     .daily-recipe img {
-        width: 272px;
+        width: 304px;
 
     }
 
@@ -870,23 +864,17 @@ tr:nth-child(odd) {
 
     .navigationbar {
         font-size: 16px;
-        ;
-    }
-
-    .icon img {
-        width: 12px !important;
-        height: 12px;
     }
 
     .ingredients-container {
-        width: 272px;
+        width: 304px;
         min-width: 272px;
-        margin-top: 8px;
+        margin-top: 24px;
         align-items: center;
     }
 
     .creator {
-        max-width: 272px;
+        max-width: 304px;
         width: 100%;
         align-items: center;
     }
@@ -963,7 +951,7 @@ tr:nth-child(odd) {
     }
 
     .half_section {
-        max-width: 420px;
+        width: 435px;
         padding-left: 0;
         align-items: center;
     }
@@ -1001,8 +989,8 @@ tr:nth-child(odd) {
     }
 
     .blog {
-        max-width: 420px;
-        min-width: 420px;
+        max-width: 435px;
+        min-width: 435px;
     }
 
     .navigation {
@@ -1044,6 +1032,37 @@ tr:nth-child(odd) {
         display: inline;
         width: 32px;
     }
+
+    .recipe_descrition_details {
+        margin-right: 0;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .blog-letter {
+        padding: 0;
+    }
+
+    .potato-image img {
+        padding-right: 0px;
+
+    }
+
+    .recipeoftheday {
+        margin-top: 80px;
+    }
+
+    .impressum_inner {
+        margin-top: 80px;
+    }
+    td {
+        padding-left: 0;
+        
+    }
 }
 
 @media (max-width: 560px) {
@@ -1080,6 +1099,7 @@ tr:nth-child(odd) {
     }
 
 
+
 }
 
 @media (max-width: 480px) {
@@ -1103,7 +1123,7 @@ tr:nth-child(odd) {
     }
 
     .homepage_section1 img {
-        width: 280px;
+        width: 304px;
     }
 
     .homepage_section3 {
@@ -1111,22 +1131,19 @@ tr:nth-child(odd) {
     }
 
     .blog {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 304px;
+        min-width: 304px;
         text-align: center;
     }
 
     .blog-container {
         flex-direction: column;
         align-items: center;
-        max-width: 300px;
-        min-width: 300px;
         margin-left: 0;
-        margin-right: 0;
     }
 
     .recipe_overview {
-        max-width: 300px;
+        max-width: 304px;
     }
 
 
@@ -1140,16 +1157,18 @@ tr:nth-child(odd) {
 
     .contact_form {
         height: 300px;
-        width: 250px;
+        width: 280px;
     }
 
     #buttonkontakt {
         margin-left: auto;
         margin-right: auto;
     }
-    .recipe_descrition_details {
-        margin-right: 0;
+
+    .homepage_section1 {
+        max-width: 304px;
     }
+
 }
 
 @media (min-height: 1600px) {
@@ -1157,11 +1176,12 @@ tr:nth-child(odd) {
         display: grid;
         grid-template-rows: 100px 1fr auto;
     }
+
     .impressum {
         height: calc(100vh - 100px);
     }
+
     .wrapper {
         height: calc(100vh - 260px);
     }
 }
-

@@ -4,40 +4,40 @@ document.getElementById('calculateButtonSandro').addEventListener('click', funct
 
     event.preventDefault();
 
-    let portionenSandro = parseInt(document.getElementById('portionenSandro').value);
+    let portionsSandro = parseInt(document.getElementById('portionsSandro').value);
 
-    if (isNaN(portionenSandro) || portionenSandro < 1 || portionenSandro > 20) {
+    if (isNaN(portionsSandro) || portionsSandro < 1 || portionsSandro > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
     }
 
-    let zutatenSandro = berechneZutatenSandro(portionenSandro);
+    let IngredientsSandro = calcIngredientsSandro(portionsSandro);
 
-    updateZutatenAnzeigenSandro(zutatenSandro);
+    updateIngredientsSandro(IngredientsSandro);
 });
 
-function berechneZutatenSandro(portionenSandro) {
+function calcIngredientsSandro(portionsSandro) {
     return {
-        Pasta: 125 * portionenSandro,
-        Pancetta: 25 * portionenSandro,
-        Ei: 0.5 * portionenSandro,
-        Parmesan: 20 * portionenSandro,
-        Pecorino: 20 * portionenSandro,
+        Pasta: 125 * portionsSandro,
+        Pancetta: 25 * portionsSandro,
+        Ei: 0.5 * portionsSandro,
+        Parmesan: 20 * portionsSandro,
+        Pecorino: 20 * portionsSandro,
     };
 }
 
-function updateZutatenAnzeigenSandro(zutatenSandro) {
+function updateIngredientsSandro(IngredientsSandro) {
 
-    let PastaText;
-    if (zutatenSandro.Pasta >= 1000) {
-        PastaText = (zutatenSandro.Pasta / 1000) + ' kg Pasta';
+    let PastaWord;
+    if (IngredientsSandro.Pasta >= 1000) {
+        PastaWord = (IngredientsSandro.Pasta / 1000) + ' kg Pasta';
     } else {
-        PastaText = zutatenSandro.Pasta + ' g Pasta';
+        PastaWord = IngredientsSandro.Pasta + ' g Pasta';
     }
 
-    document.getElementById('ingredient1Sandro').textContent = PastaText;
-    document.getElementById('ingredient2Sandro').textContent = zutatenSandro.Pancetta + ' g Pancetta';
-    document.getElementById('ingredient3Sandro').textContent = zutatenSandro.Ei + ' Ei(er)';
-    document.getElementById('ingredient4Sandro').textContent = zutatenSandro.Parmesan + ' g Parmesan';
-    document.getElementById('ingredient5Sandro').textContent = zutatenSandro.Pecorino + ' g Pecorino';
+    document.getElementById('ingredient1Sandro').textContent = PastaWord;
+    document.getElementById('ingredient2Sandro').textContent = IngredientsSandro.Pancetta + ' g Pancetta';
+    document.getElementById('ingredient3Sandro').textContent = IngredientsSandro.Ei + ' Ei(er)';
+    document.getElementById('ingredient4Sandro').textContent = IngredientsSandro.Parmesan + ' g Parmesan';
+    document.getElementById('ingredient5Sandro').textContent = IngredientsSandro.Pecorino + ' g Pecorino';
 }

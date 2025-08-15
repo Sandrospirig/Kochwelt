@@ -6,6 +6,7 @@ function showHideMobileMenu() {
 
     if (menu.classList.contains('menu_close')) {
         btnImg.src = './img/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png';
-    } else {btnImg.src = './img/icons/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png';
+    } else {
+        btnImg.src = './img/icons/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png';
     }
 }

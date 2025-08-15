@@ -4,60 +4,60 @@ document.getElementById('calculateButtonMatthias').addEventListener('click', fun
 
     event.preventDefault();
 
-    let portionenMatthias = parseInt(document.getElementById('portionenMatthias').value);
+    let portionsMatthias = parseInt(document.getElementById('portionsMatthias').value);
 
-    if (isNaN(portionenMatthias) || portionenMatthias < 1 || portionenMatthias > 20) {
+    if (isNaN(portionsMatthias) || portionsMatthias < 1 || portionsMatthias > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
     }
 
-    let zutatenMatthias = berechneZutatenMatthias(portionenMatthias);
+    let IngredientsMatthias = calcIngredientsMatthias(portionsMatthias);
 
-    updateZutatenAnzeigenMatthias(zutatenMatthias);
+    updateIngredientsMatthias(IngredientsMatthias);
 });
 
-function berechneZutatenMatthias(portionenMatthias) {
+function calcIngredientsMatthias(portionsMatthias) {
     return {
-        Leberkäse: 100 * portionenMatthias,
-        Speck: 10 * portionenMatthias,
-        Zwiebel: 0.5 * portionenMatthias,
-        Öl: 0.75 * portionenMatthias,
-        Kartoffel: 100 * portionenMatthias,
-        Lauch: 62.5 * portionenMatthias,
-        Paprikaschote: 0.5 * portionenMatthias,
-        Cremefraiche: 25 * portionenMatthias,
+        Leberkäse: 100 * portionsMatthias,
+        Speck: 10 * portionsMatthias,
+        Zwiebel: 0.5 * portionsMatthias,
+        Öl: 0.75 * portionsMatthias,
+        Kartoffel: 100 * portionsMatthias,
+        Lauch: 62.5 * portionsMatthias,
+        Paprikaschote: 0.5 * portionsMatthias,
+        Cremefraiche: 25 * portionsMatthias,
     };
 }
 
-function updateZutatenAnzeigenMatthias(zutatenMatthias) {
+function updateIngredientsMatthias(IngredientsMatthias) {
 
-    let LeberkäseText;
-    if (zutatenMatthias.Leberkäse >= 1000) {
-        LeberkäseText = (zutatenMatthias.Leberkäse / 1000) + ' kg Leberkäse';
+    let LeberkäseWord;
+    if (IngredientsMatthias.Leberkäse >= 1000) {
+        LeberkäseWord = (IngredientsMatthias.Leberkäse / 1000) + ' kg Leberkäse';
     } else {
-        LeberkäseText = zutatenMatthias.Leberkäse + ' g Leberkäse';
+        LeberkäseWord = IngredientsMatthias.Leberkäse + ' g Leberkäse';
     }
 
-    let KartoffelText;
-    if (zutatenMatthias.Kartoffel >= 1000) {
-        KartoffelText = (zutatenMatthias.Kartoffel / 1000) + ' kg Kartoffeln';
+    let KartoffelWord;
+    if (IngredientsMatthias.Kartoffel >= 1000) {
+        KartoffelWord = (IngredientsMatthias.Kartoffel / 1000) + ' kg Kartoffeln';
     } else {
-        KartoffelText = zutatenMatthias.Kartoffel + ' g Kartoffeln';
+        KartoffelWord = IngredientsMatthias.Kartoffel + ' g Kartoffeln';
     }
 
-    let LauchText;
-    if (zutatenMatthias.Lauch >= 1000) {
-        LauchText = (zutatenMatthias.Lauch / 1000) + ' kg Lauch';
+    let LauchWord;
+    if (IngredientsMatthias.Lauch >= 1000) {
+        LauchWord = (IngredientsMatthias.Lauch / 1000) + ' kg Lauch';
     } else {
-        LauchText = zutatenMatthias.Lauch + ' g Lauch';
+        LauchWord = IngredientsMatthias.Lauch + ' g Lauch';
     }
 
-    document.getElementById('ingredient1Matthias').textContent = LeberkäseText;
-    document.getElementById('ingredient2Matthias').textContent = zutatenMatthias.Speck + ' g Speck, geräuchert';
-    document.getElementById('ingredient3Matthias').textContent = zutatenMatthias.Zwiebel + ' Zwiebel(n)';
-    document.getElementById('ingredient4Matthias').textContent = zutatenMatthias.Öl + ' EL Öl';
-    document.getElementById('ingredient5Matthias').textContent = KartoffelText;
-    document.getElementById('ingredient6Matthias').textContent = LauchText;
-    document.getElementById('ingredient7Matthias').textContent = zutatenMatthias.Paprikaschote + ' Paprikaschote(n)';
-    document.getElementById('ingredient8Matthias').textContent = zutatenMatthias.Cremefraiche + ' g Crème fraîche';
+    document.getElementById('ingredient1Matthias').textContent = LeberkäseWord;
+    document.getElementById('ingredient2Matthias').textContent = IngredientsMatthias.Speck + ' g Speck, geräuchert';
+    document.getElementById('ingredient3Matthias').textContent = IngredientsMatthias.Zwiebel + ' Zwiebel(n)';
+    document.getElementById('ingredient4Matthias').textContent = IngredientsMatthias.Öl + ' EL Öl';
+    document.getElementById('ingredient5Matthias').textContent = KartoffelWord;
+    document.getElementById('ingredient6Matthias').textContent = LauchWord;
+    document.getElementById('ingredient7Matthias').textContent = IngredientsMatthias.Paprikaschote + ' Paprikaschote(n)';
+    document.getElementById('ingredient8Matthias').textContent = IngredientsMatthias.Cremefraiche + ' g Crème fraîche';
 }

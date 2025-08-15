@@ -11,32 +11,33 @@
 
 <body>
     <header>
-    <nav class="navigation">
-      <div class="navigation_left">
-        <a class="navigation_logo" href="index.html">
-          <img src="./img/logo.png" alt="Kochweltlogo"></a>
-      </div>
+        <nav class="navigation">
+            <div class="navigation_left">
+                <a class="navigation_logo" href="index.html">
+                    <img src="./img/logo.png" alt="Kochweltlogo"></a>
+            </div>
 
-      <div class="navigation_right">
-        <nav class="navigationbar">
-          <a class="hide" href="index.html">Start</a>
-          <a class="hide" href="Jensgoulasch.html">Rezept des Tages</a>
-          <a class="hide" href="kontakt.html">Kontakt</a>
-          <a class="hide" href="impressum.html">Impressum</a>
-          <button onclick="showHideMobileMenu()" class="mobile_menu">
-            <img src="./img/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="mobile menu open/close">
-          </button>
-          <div id="resp_menu" class="burger_menu menu_close">
+            <div class="navigation_right">
+                <nav class="navigationbar">
+                    <a class="hide" href="index.html">Start</a>
+                    <a class="hide" href="Jensgoulasch.html">Rezept des Tages</a>
+                    <a class="hide" href="kontakt.html">Kontakt</a>
+                    <a class="hide" href="impressum.html">Impressum</a>
+                    <button onclick="showHideMobileMenu()" class="mobile_menu">
+                        <img src="./img/icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                            alt="mobile menu open/close">
+                    </button>
+                    <div id="resp_menu" class="burger_menu menu_close">
 
-            <a class="mobile_links" href="index.html">Start</a>
-            <a class="mobile_links" href="Jensgoulasch.html">Rezept des Tages</a>
-            <a class="mobile_links" href="kontakt.html">Kontakt</a>
-            <a class="mobile_links" href="impressum.html">Impressum</a>
-          </div>
+                        <a class="mobile_links" href="index.html">Start</a>
+                        <a class="mobile_links" href="Jensgoulasch.html">Rezept des Tages</a>
+                        <a class="mobile_links" href="kontakt.html">Kontakt</a>
+                        <a class="mobile_links" href="impressum.html">Impressum</a>
+                    </div>
+                </nav>
+            </div>
         </nav>
-      </div>
-    </nav>
-  </header>
+    </header>
     <main class="recipeoftheday">
 
         <section class="daily-recipe">
@@ -66,7 +67,7 @@
 
                 <form>
                     <span>Zutaten für</span>
-                    <input min="1" max="20" value="2" type="number" id="portionenJens" placeholder="Anzahl an Portionen"
+                    <input min="1" max="20" value="2" type="number" id="portionsJens" placeholder="Anzahl an Portionen"
                         required>
                     <button id="calculateButtonJens" type="submit">Portionen</button>
                 </form>
@@ -157,7 +158,7 @@
         </section>
     </main>
     <footer></footer>
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
     <script src="scriptJens.js"></script>
 </body>
 
