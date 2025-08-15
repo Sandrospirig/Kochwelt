@@ -663,7 +663,7 @@ tr:nth-child(odd) {
     }
 
     .blog-letter {
-        padding: 16px;
+        padding: 4px;
     }
 
     .blog {
@@ -1111,19 +1111,22 @@ tr:nth-child(odd) {
     }
 
     .blog {
-        max-width: 320px;
-        min-width: 320px;
+        max-width: 300px;
+        min-width: 300px;
         text-align: center;
     }
 
     .blog-container {
         flex-direction: column;
         align-items: center;
+        max-width: 300px;
+        min-width: 300px;
         margin-left: 0;
+        margin-right: 0;
     }
 
     .recipe_overview {
-        max-width: 320px;
+        max-width: 300px;
     }
 
 
@@ -1161,3 +1164,4 @@ tr:nth-child(odd) {
         height: calc(100vh - 260px);
     }
 }
+
