@@ -850,7 +850,7 @@ tr:nth-child(odd) {
     }
 
     .daily-recipe img {
-        width: 272px;
+        width: 304px;
 
     }
 
@@ -867,14 +867,14 @@ tr:nth-child(odd) {
     }
 
     .ingredients-container {
-        width: 272px;
+        width: 304px;
         min-width: 272px;
         margin-top: 24px;
         align-items: center;
     }
 
     .creator {
-        max-width: 272px;
+        max-width: 304px;
         width: 100%;
         align-items: center;
     }
@@ -1059,6 +1059,10 @@ tr:nth-child(odd) {
     .impressum_inner {
         margin-top: 80px;
     }
+    td {
+        padding-left: 0;
+        
+    }
 }
 
 @media (max-width: 560px) {
@@ -1133,7 +1137,7 @@ tr:nth-child(odd) {
     }
 
     .recipe_overview {
-        max-width: 320px;
+        max-width: 304px;
     }
 
 
@@ -1147,7 +1151,7 @@ tr:nth-child(odd) {
 
     .contact_form {
         height: 300px;
-        width: 250px;
+        width: 280px;
     }
 
     #buttonkontakt {
