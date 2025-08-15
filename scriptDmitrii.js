@@ -4,30 +4,30 @@ document.getElementById('calculateButtonDmitrii').addEventListener('click', func
 
     event.preventDefault();
 
-    let portionenDmitrii = parseInt(document.getElementById('portionenDmitrii').value);
+    let portionsDmitrii = parseInt(document.getElementById('portionsDmitrii').value);
 
-    if (isNaN(portionenDmitrii) || portionenDmitrii < 1 || portionenDmitrii > 20) {
+    if (isNaN(portionsDmitrii) || portionsDmitrii < 1 || portionsDmitrii > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
     }
 
-    let IngredientsDmitrii = calcIngredientsDmitrii(portionenDmitrii);
+    let IngredientsDmitrii = calcIngredientsDmitrii(portionsDmitrii);
 
     updateIngredientsDmitrii(IngredientsDmitrii);
 });
 
-function calcIngredientsDmitrii(portionenDmitrii) {
+function calcIngredientsDmitrii(portionsDmitrii) {
     return {
-        Mehl: 100 * portionenDmitrii,
-        Eier: 0.5 * portionenDmitrii,
-        Wasser: 37.5 * portionenDmitrii,
-        Salz: 0.125 * portionenDmitrii,
-        Hackfleisch: 100 * portionenDmitrii,
-        Butter: 12.5 * portionenDmitrii,
-        Sahne: 0.75 * portionenDmitrii,
-        Zwiebel: 0.5 * portionenDmitrii,
-        Butter: 0.5 * portionenDmitrii,
-        Essig: 0.75 * portionenDmitrii,
+        Mehl: 100 * portionsDmitrii,
+        Eier: 0.5 * portionsDmitrii,
+        Wasser: 37.5 * portionsDmitrii,
+        Salz: 0.125 * portionsDmitrii,
+        Hackfleisch: 100 * portionsDmitrii,
+        Butter: 12.5 * portionsDmitrii,
+        Sahne: 0.75 * portionsDmitrii,
+        Zwiebel: 0.5 * portionsDmitrii,
+        Butter: 0.5 * portionsDmitrii,
+        Essig: 0.75 * portionsDmitrii,
     };
 }
 

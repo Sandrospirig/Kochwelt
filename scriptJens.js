@@ -3,31 +3,31 @@ document.getElementById('calculateButtonJens').addEventListener('click', functio
 
     event.preventDefault();
 
-    let portionenJens = parseInt(document.getElementById('portionenJens').value);
+    let portionsJens = parseInt(document.getElementById('portionsJens').value);
 
-    if (isNaN(portionenJens) || portionenJens < 1 || portionenJens > 20) {
+    if (isNaN(portionsJens) || portionsJens < 1 || portionsJens > 20) {
         alert("Bitte eine Zahl von 1 bis 20 eingeben")
         return //{alert();} 
     }
 
-    let IngredientsJens = calcIngredientsJens(portionenJens);
+    let IngredientsJens = calcIngredientsJens(portionsJens);
 
     updateIngredientsJens(IngredientsJens);
 });
 
-function calcIngredientsJens(portionenJens) {
+function calcIngredientsJens(portionsJens) {
     return {
-        Schweinegulasch: 125 * portionenJens,
-        Butterschmalz: 0.5 * portionenJens,
-        Senf: 0.25 * portionenJens,
-        Tomatenmark: 0.25 * portionenJens,
-        großeZwiebeln: 0.25 * portionenJens,
-        Knoblauchzehen: 0.25 * portionenJens,
-        Karotte: 0.25 * portionenJens,
-        Bier: 50 * portionenJens,
-        Gemüsebrühe: 150 * portionenJens,
-        Paprikapulver: 0.25 * portionenJens,
-        Cremefraiche: 50 * portionenJens,
+        Schweinegulasch: 125 * portionsJens,
+        Butterschmalz: 0.5 * portionsJens,
+        Senf: 0.25 * portionsJens,
+        Tomatenmark: 0.25 * portionsJens,
+        großeZwiebeln: 0.25 * portionsJens,
+        Knoblauchzehen: 0.25 * portionsJens,
+        Karotte: 0.25 * portionsJens,
+        Bier: 50 * portionsJens,
+        Gemüsebrühe: 150 * portionsJens,
+        Paprikapulver: 0.25 * portionsJens,
+        Cremefraiche: 50 * portionsJens,
     };
 }
 
